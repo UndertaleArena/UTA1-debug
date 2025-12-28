@@ -10,6 +10,7 @@ execute if entity @s[tag=passive_muffet,tag=passive_muffet_cd] run function ut:p
 execute if entity @s[tag=undying] run function ut:player/actionbar/effect/014
 execute if entity @s[tag=has_save] run function ut:player/actionbar/effect/016
 execute if entity @s[tag=amalgamate] run function ut:player/actionbar/effect/025
+execute if entity @s[tag=passive_undyne] run function ut:player/actionbar/effect/052
 #
 execute if entity @s[tag=effect_flirt] run function ut:player/actionbar/effect/021
 execute if entity @s[tag=effect_stun] run function ut:player/actionbar/effect/022
@@ -21,6 +22,7 @@ execute if entity @s[tag=effect_shocked] run function ut:player/actionbar/effect
 execute if entity @s[tag=effect_impaled] run function ut:player/actionbar/effect/043
 #
 execute if entity @s[tag=counter_dodge] run function ut:player/actionbar/effect/001
+execute if entity @s[tag=counter_dodgep] run function ut:player/actionbar/effect/000
 execute if entity @s[tag=ghost_user] run function ut:player/actionbar/effect/035
 execute if entity @s[tag=warp_user] run function ut:player/actionbar/effect/081
 execute if entity @s[tag=passive_default] run function ut:player/actionbar/effect/082

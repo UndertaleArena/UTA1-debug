@@ -9,7 +9,7 @@ scoreboard players operation #player plt1c = @s plt1c
 scoreboard players add #player plt1c 1
 playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.8 1.6
 ###SUMMON ENTITY
-summon minecraft:armor_stand ^0.0 ^-0.2 ^0.0 {Tags:[fireball,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:magma_cream",count:1b}],CustomName:'{"translate":"chr.toriel.mpn"}'}
+summon minecraft:armor_stand ^0.0 ^-0.2 ^0.0 {Tags:[fireball,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,equipment:{head:{id:"minecraft:magma_cream",count:1b}},CustomName:{"translate":"chr.toriel.mpn"}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s prj_speed
 scoreboard players operation #player damage = @s atk

@@ -1,7 +1,6 @@
 #By Nebulirion
 
-execute if score @s[tag=!attack_buffed] plt1b matches ..26 run particle dust{color:[0.9,0.9,0.0],scale:0.6} ^ ^ ^-1 0.05 0.05 0.05 0 2 force @a
-execute if score @s[tag=attack_buffed] plt1b matches ..26 run particle dust{color:[0.937,0.376,0.937],scale:0.6} ^ ^ ^-1 0.05 0.05 0.05 0 2 force @a
+execute if score @s plt1b matches ..26 run particle dust{color:[0.9,0.9,0.0],scale:0.6} ^ ^ ^-1 0.05 0.05 0.05 0 2 force @a
 
 tag @s add atker_p
 scoreboard players operation #atker pid = @s pid

@@ -2,8 +2,8 @@
     "condition": "minecraft:location_check",
     "predicate":
     {
-      "fluid": {
-        "fluid": "water"
-      }
+        "fluid": {
+            "fluids": "water"
+        }
     }
 } 

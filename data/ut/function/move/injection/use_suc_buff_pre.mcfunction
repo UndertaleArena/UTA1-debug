@@ -3,7 +3,7 @@
 playsound minecraft:block.dispenser.launch player @a ~ ~ ~ 1 1.6
 
 execute positioned ^ ^-.2 ^ run function ut:move/rot/18
-data merge entity @e[tag=summon,limit=1] {Tags:[summon,move,syringe,syringe_prj,spc],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:rotten_flesh",count:1b,components:{"minecraft:custom_model_data":99}}],Pose:{Head:[0f,0f,0f]},CustomName:'{"translate":"chr.alphys.dtn"}'}
+data merge entity @e[tag=summon,limit=1] {Tags:[summon,move,syringe,syringe_prj,spc,no_passive],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,equipment:{head:{id:"minecraft:rotten_flesh",count:1,components:{"minecraft:custom_model_data":{floats:[99]}}}},Pose:{Head:[0f,0f,0f]},CustomName:{"translate":"chr.alphys.dtn"}}
 
 scoreboard players set #this damage 0
 scoreboard players set #this lifetime 60

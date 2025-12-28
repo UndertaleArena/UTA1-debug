@@ -13,6 +13,6 @@ scoreboard players set #cbmodel plt1 246
 scoreboard players operation #cbmodel plt1 += #cb plt1
 
 item replace block 255 0 255 container.0 from entity @s weapon.mainhand
-execute store result block 255 0 255 Items[0].components."minecraft:custom_model_data" int 1 run scoreboard players get #cbmodel plt1
+execute store result block 255 0 255 Items[0].components."minecraft:custom_model_data".floats[0] int 1 run scoreboard players get #cbmodel plt1
 execute store result block 255 0 255 Items[0].components."minecraft:custom_data".cb_charge int 1 run scoreboard players get #cb plt1
 item replace entity @s weapon.mainhand from block 255 0 255 container.0

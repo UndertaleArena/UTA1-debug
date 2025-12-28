@@ -11,7 +11,7 @@ execute if score @s[advancements={ut:chr/tobyfox/lv5=true}] istobychr matches 1 
 
 item replace entity 0-0-0-0-1 container.0 with stone
 item modify entity 0-0-0-0-1 container.0 ut:random
-execute store result score -truerandom store run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score -truerandom store run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers"[0].amount
 
 execute unless score @s istobychr matches 1 run scoreboard players set -truerandom store 0
 

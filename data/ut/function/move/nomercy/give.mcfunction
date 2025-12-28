@@ -1,7 +1,7 @@
 #By Nebulirion
 
 data modify block 255 0 255 Items set value []
-item replace block 255 0 255 container.0 with minecraft:carrot_on_a_stick[custom_name='{"translate":"chr.asgore.spxn","italic":false,"bold":true}',lore=['{"text":""}','{"translate":"chr.asgore.sp1","italic":false,"color":"white"}','{"translate":"chr.asgore.sp2","italic":false,"color":"white"}'],custom_model_data=105,custom_data={sp_move:1b,nomercy:1b}]
+item replace block 255 0 255 container.0 with minecraft:carrot_on_a_stick[custom_name={"translate":"chr.asgore.spxn","italic":false,"bold":true},lore=[{"text":""},{"translate":"chr.asgore.sp1","italic":false,"color":"white"},{"translate":"chr.asgore.sp2","italic":false,"color":"white"}],custom_model_data={floats:[105]},custom_data={sp_move:1b,nomercy:1b}]
 item modify block 255 0 255 container.0 ut:no_melee 
 
 clear @s carrot_on_a_stick[custom_data~{nomercy:1b}]

@@ -2,7 +2,7 @@
 
 data modify block 255 0 255 Items set value []
 loot replace block 255 0 255 container.0 loot ut:48
-execute store result score rng store run data get block 255 0 255 Items[0].components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score rng store run data get block 255 0 255 Items[0].components."minecraft:attribute_modifiers"[0].amount
 
 execute if block ~ ~ ~ black_concrete run setblock ~ ~ ~ green_concrete
 execute if block ~ ~ ~ #ut:treeeeat run setblock ~ ~ ~ green_terracotta

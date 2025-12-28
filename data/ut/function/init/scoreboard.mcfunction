@@ -50,7 +50,7 @@ scoreboard objectives add snail_timer dummy
 scoreboard objectives add maze_timer dummy
 scoreboard objectives add undying_total dummy
 scoreboard objectives add random dummy
-scoreboard objectives add favourite dummy 
+scoreboard objectives add favourite dummy
 scoreboard objectives add daytime dummy
 scoreboard objectives add tbid dummy "Team Battle ID"
 scoreboard objectives add etid dummy "Enemy Team ID"
@@ -70,6 +70,8 @@ scoreboard objectives add last_chr_ingame dummy "THE COOLER LAST CHARACTER"
 scoreboard objectives add Q dummy "DISPLAY QUALITY"
 scoreboard objectives add N dummy "NIGHT VISION"
 scoreboard objectives add C dummy "DEFAULT CHARACTER"
+scoreboard objectives add S dummy "STAT"
+scoreboard objectives add UI dummy "USER INTERFACE"
 scoreboard objectives add trigger trigger "TIGER"
 ###
 scoreboard objectives add tech dummy "Technical Stuff (Pain)"
@@ -100,6 +102,7 @@ scoreboard objectives add border_timer dummy "B damage"
 #####scoreboard
 ###system
 scoreboard objectives add game dummy "GAME"
+scoreboard objectives add siegegame dummy "SIEGE GAME"
 scoreboard objectives add gamerule dummy "GAMERULES"
 scoreboard objectives add gamerulemode dummy "GAMEMODE SETTINGS"
 function ut:game/gamerule
@@ -130,6 +133,9 @@ scoreboard objectives add istobychr dummy "IS TOBY"
 ###playerStatus
 #damage
 scoreboard objectives add hitcheck dummy "HIT CHECK"
+scoreboard objectives add shield dummy "SHIELD"
+# scoreboard objectives add passive_muffet dummy "PASSIVE MUFFET COUNT DOWN"
+# scoreboard objectives add passive_papyrus dummy "PASSIVE PAPYRUS BOSS BAR"
 
 scoreboard objectives add prj_speed dummy "PRJ SPEED"
 scoreboard players set #rate prj_speed 100
@@ -174,12 +180,21 @@ scoreboard players operation #quickhealLim will += #quickHealCost will
 scoreboard objectives add unloadtime dummy "UNLOADTIME"
 scoreboard objectives add unloadtime_2nd dummy "UNLOADTIME BUT COMPLICATED"
 scoreboard objectives add unloadtime_3rd dummy "UNLOADTIME BUT EVEN MORE COMPLICATED"
+scoreboard objectives add unloadtime_4th dummy "UNLOADTIME BUT EVEN EVEN MORE COMPLICATED HOLY SQUID"
 scoreboard objectives add last_damaged dummy "LAST DAMAGED"
 scoreboard objectives add last_damage dummy "LAST DAMAGE"
 scoreboard objectives add last_use dummy "LAST USE"
 scoreboard objectives add last_infight dummy "LAST INFIGHT"
 scoreboard players set #out last_infight 100
 scoreboard players set #glow last_infight 1200
+scoreboard objectives add ptsd_elim dummy
+scoreboard objectives add ptsd_death dummy
+scoreboard objectives add ptsd_assist dummy
+scoreboard objectives add ptsd_dtuse dummy
+scoreboard objectives add ptsd_dmg dummy
+scoreboard objectives add ptsd_tdmg dummy
+scoreboard objectives add ptsd_wdmg dummy
+scoreboard objectives add ptsd_dmged dummy
 #mana
 scoreboard objectives add mp dummy "MANA"
 scoreboard players set #regenSpeed mp 1
@@ -202,7 +217,10 @@ scoreboard objectives add cdextra dummy
 scoreboard objectives add dt dummy "DETERMINATION"
 scoreboard players set #gainPerDamage dt 1
 scoreboard objectives add dtmax dummy "MAX DETERMINATION"
+scoreboard objectives add dthalf dummy "HALF OF THE MAX DETERMINATION"
 scoreboard objectives add dtbase dummy "BASE DETERMINATION"
+scoreboard objectives add dtmath dummy "DETERMINATION MATH"
+scoreboard players set -temp dtmath 0
 
 #moving
 scoreboard objectives add move dummy
@@ -219,7 +237,6 @@ scoreboard objectives add y_lastground dummy
 scoreboard objectives add z_lastground dummy
 scoreboard objectives add distance dummy
 scoreboard objectives add momentum dummy
-scoreboard objectives add ismoving dummy
 
 scoreboard players set #sensitivity momentum 50
 scoreboard players set #checkInterval momentum 2
@@ -238,8 +255,10 @@ scoreboard objectives add filter_r dummy
 scoreboard objectives add plt1 dummy "PLAYER LOOP TIME 1A"
 scoreboard objectives add plt1b dummy "PLAYER LOOP TIME 1B"
 scoreboard objectives add plt1c dummy "PLAYER LOOP TIME 1C"
+scoreboard objectives add plt1d dummy "PLAYER LOOP TIME 1D"
 scoreboard objectives add plt2 dummy "PLAYER LOOP TIME 2A"
 scoreboard objectives add plt2b dummy "PLAYER LOOP TIME 2B"
+scoreboard objectives add plt2c dummy "PLAYER LOOP TIME 2C"
 scoreboard objectives add plt3 dummy "PLAYER LOOP TIME 3A"
 scoreboard objectives add plt3b dummy "PLAYER LOOP TIME 3B"
 scoreboard objectives add plt4 dummy "PLAYER LOOP TIME 4A"
@@ -279,10 +298,11 @@ scoreboard objectives add lifetime dummy
 scoreboard objectives add life dummy
 scoreboard objectives add life2 dummy
 scoreboard objectives add range dummy
+scoreboard objectives add maxrange dummy
 scoreboard objectives add gravity dummy
 scoreboard objectives add width dummy "W"
 scoreboard objectives add height dummy "H"
-scoreboard objectives add offset dummy 
+scoreboard objectives add offset dummy
 #minecraft
 scoreboard objectives add rc minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add jump minecraft.custom:minecraft.jump
@@ -392,7 +412,7 @@ scoreboard players add @a tpd 0
 scoreboard players add @a atk 0
 scoreboard players add @a def 0
 scoreboard players add @a will 0
-scoreboard players add @a last_fight 0
+# scoreboard players add @a last_fight 0
 scoreboard players add @a unloadtime 0
 scoreboard players add @a tobylock 0
 #
@@ -403,7 +423,7 @@ execute as @a run scoreboard players operation @s[scores={hp=0}] hp = @s hpmax
 execute as @a run scoreboard players operation @s[scores={mp=0}] mp = @s mpmax
 execute as @a run scoreboard players operation @s[scores={cd=0}] cd = @s cdmax
 scoreboard players set @a[scores={dtmax=0}] dtmax 20
-scoreboard players set @a[scores={last_fight=0}] last_fight 0
+# scoreboard players set @a[scores={last_fight=0}] last_fight 0
 scoreboard players set @a[scores={unloadtime=0}] unloadtime 0
 scoreboard players set @a[scores={lv=0}] lv 1
 scoreboard players set @a[scores={will=0}] will 100
@@ -492,8 +512,11 @@ scoreboard players set F_Goal gamerulemode 3
 #
 scoreboard players set G_xxxxx gamerulemode 0
 scoreboard players set G_Bonus gamerulemode 1
-scoreboard players set G_xxxxx gamerulemode 0
+scoreboard players set G_SwitchSide gamerulemode 0
 
 #default visibility
 scoreboard objectives setdisplay list gamesfinished
 scoreboard objectives setdisplay below_name
+
+
+scoreboard players set -pap_dtmax info 2

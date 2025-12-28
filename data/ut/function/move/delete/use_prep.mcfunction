@@ -9,7 +9,9 @@ tag @s add delete_user
 scoreboard players set @s unloadtime 20
 
 scoreboard players set @s plt3 80
-scoreboard players operation @s plt3b = @s dtmax
+scoreboard players operation @s dtmath = @s dt
+scoreboard players operation @s[tag=!passive_papyrus] plt3b = @s dtmax
+scoreboard players operation @s[tag=passive_papyrus] plt3b = @s dthalf
 scoreboard players operation @s plt3b /= @s plt3
 scoreboard players set @s plt3 100
 

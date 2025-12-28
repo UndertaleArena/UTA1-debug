@@ -18,5 +18,5 @@ scoreboard players operation #temp store += -temp store
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #temp store
 execute rotated as @s positioned ^ ^ ^2 as @e[tag=hand_curr,limit=1] run function ut:move/hand/move/circle_pos
 
-#assist's rotation reset
+#assists rotation reset
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #rot store

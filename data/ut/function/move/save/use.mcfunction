@@ -1,6 +1,7 @@
 #By Nebulirion
 
-scoreboard players set #reset dt 1
+execute if entity @s[tag=!passive_papyrus] if entity @s run scoreboard players set #reset dt 1
+#execute if entity @s[tag=passive_papyrus] if entity @e[tag=save_point] run scoreboard players set #reset dt 0
 #
 tag @s add save_user
 scoreboard players operation #user pid = @s pid

@@ -1,4 +1,4 @@
-#What's the difference between a Cupcake and a Muffin???
+#Whats the difference between a Cupcake and a Muffin???
 
 playsound minecraft:entity.phantom.bite player @a ~ ~ ~ 1 1.3
 

@@ -3,7 +3,7 @@
 particle minecraft:sneeze ~ ~1.3 ~ .25 .4 .25 0.05 100 force @a[scores={Q=2..}]
 playsound minecraft:block.conduit.activate player @a ~ ~ ~ 2 2
 
-attribute @s generic.movement_speed modifier add injectspeed 0.5 add_multiplied_total
+attribute @s movement_speed modifier add injectspeed 0.5 add_multiplied_total
 
 scoreboard players add @s[tag=!injected] move_loop 1
 

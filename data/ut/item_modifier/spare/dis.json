@@ -1,0 +1,22 @@
+{
+    "function": "sequence",
+    "functions": [
+        {
+            "function": "minecraft:set_custom_model_data",
+            "floats": {
+                "values": [300],
+                "mode": "replace_all"
+            }
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"itm.spare.dis","italic":false,"bold":true},
+            "target": "custom_name"
+        },
+        {
+            "function": "set_lore",
+            "lore": [{"text":""},{"translate":"itm.spare.dis1","italic":false,"color":"white"}],
+            "mode": "replace_all"
+        }
+    ]
+}

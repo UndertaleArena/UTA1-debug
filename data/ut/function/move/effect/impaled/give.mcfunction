@@ -1,7 +1,7 @@
 #By Nebulirion
 
-scoreboard players set @s impaled_timer 60
-scoreboard players add @s impaled_level 1
+scoreboard players set @s impaled_timer 40
+execute unless score @s impaled_level matches 7.. run scoreboard players add @s impaled_level 1
 
 function ut:move/effect/impaled/update
 

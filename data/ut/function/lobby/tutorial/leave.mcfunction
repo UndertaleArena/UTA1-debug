@@ -11,6 +11,6 @@ tag @s remove untargetable
 tag @s remove playing_tut
 
 scoreboard players reset @s bid
-function ut:player/bossbar/adjust
+function ut:player/bossbar/adjust_tut
 
 function ut:lobby/tutorial/check

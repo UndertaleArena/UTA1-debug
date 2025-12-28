@@ -2,7 +2,7 @@
 
 item replace entity 0-0-0-0-1 container.0 with bread
 item modify entity 0-0-0-0-1 container.0 ut:random
-execute store result score -block maze_timer run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score -block maze_timer run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers"[0].amount
 
 fill ~ 167 ~ ~ 166 ~ air
 setblock ~ ~1 ~ air

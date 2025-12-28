@@ -3,8 +3,8 @@
 execute anchored eyes run function ut:move/spear/cast
 
 scoreboard players set @s unloadtime_2nd 20
-scoreboard players remove @s[tag=undying,tag=!attack_buffed] unloadtime_2nd 8
-scoreboard players remove @s[tag=attack_buffed] unloadtime_2nd 12
+scoreboard players remove @s[tag=undying] unloadtime_2nd 8
+scoreboard players remove @s[tag=attack_buffed] unloadtime_2nd 8
 scoreboard players set @s unloadtime 4
 scoreboard players add @s mpcooldown 8
 

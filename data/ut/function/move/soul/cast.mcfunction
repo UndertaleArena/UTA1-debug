@@ -1,9 +1,9 @@
 #By Nebulirion
 
 #check on this
-execute positioned ~ ~1 ~ rotated 0 0 run summon minecraft:armor_stand ^ ^ ^1 {Tags:[summon,move,spc,boss_soul],Marker:1b,Small:1b,ArmorItems:[{},{},{id:"minecraft:stone",count:1b},{}],Pose:{Head:[0f,0f,0f]},CustomName:'{"translate":"boss.soul.effect"}',Glowing:1b}
+execute positioned ~ ~1 ~ rotated 0 0 run summon minecraft:armor_stand ^ ^ ^1 {Tags:[summon,move,spc,boss_soul],Marker:1b,Small:1b,equipment:{chest:{id:"minecraft:stone",count:1b}},Pose:{Head:[0f,0f,0f]},CustomName:{"translate":"boss.soul.effect"},Glowing:1b}
 
-data modify entity @e[tag=summon,limit=1] ArmorItems[3] set from entity @s SelectedItem
+data modify entity @e[tag=summon,limit=1] equipment.head set from entity @s SelectedItem
 
 scoreboard players set #this lifetime 100
 scoreboard players set #this damage 0

@@ -11,5 +11,5 @@ execute store result storage ut:macro Input.grav double 0.0001 run scoreboard pl
 
 tellraw @a {"nbt":"Input.grav","storage": "ut:macro", "interpret": true}
 
-attribute @s generic.gravity modifier remove angelgrav
+attribute @s gravity modifier remove angelgrav
 function ut:move/angel_form/gravity_m with storage ut:macro Input

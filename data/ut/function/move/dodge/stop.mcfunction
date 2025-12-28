@@ -3,8 +3,8 @@
 #effect clear @s speed
 effect give @s minecraft:jump_boost infinite 0 true
 
-attribute @s generic.movement_speed modifier remove dodgeslow
-attribute @s generic.knockback_resistance modifier remove dodgekbr
+attribute @s movement_speed modifier remove dodgeslow
+attribute @s knockback_resistance modifier remove dodgekbr
 
 scoreboard players reset @s plt2
 scoreboard players reset @s plt2b

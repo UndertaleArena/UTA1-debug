@@ -1,14 +1,17 @@
 #By Nebulirion
 
 execute if score -Enabled stat matches 1 run scoreboard players add @s st_cdtuse 1
-scoreboard players set #reset dt 1
+execute if score -Enabled stat matches 1 run scoreboard players add @s ptsd_dtuse 1
+execute if entity @s[tag=!passive_papyrus] run scoreboard players set #reset dt 1
+execute if entity @s[tag=passive_papyrus] run scoreboard players operation @s dt -= @s dthalf
 
-scoreboard players set @s unloadtime 10
-
-attribute @s minecraft:generic.gravity modifier add ut:kingfall 3000 add_value
-#effect give @s minecraft:slow_falling 5 200 true
+scoreboard players set @s unloadtime 16
 
 execute if entity @s[tag=effect_king] run function ut:move/effect/king/clear
+
+attribute @s minecraft:gravity modifier add ut:kingfall 3000 add_value
+#effect give @s minecraft:slow_falling 5 200 true
+
 function ut:move/effect/king/give
 tag @s add king_fall
 tag @s remove fall_slimed

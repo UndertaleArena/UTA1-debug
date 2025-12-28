@@ -5,6 +5,7 @@
 scoreboard players set #damage damage 0
 scoreboard players set #gain dt 200
 scoreboard players set #gain will 200
+scoreboard players set #wdmg ptsd_wdmg 20
 ###WILL
 execute at @s run particle minecraft:angry_villager ~ ~1.5 ~ 0.2 0.2 0.2 0 4 normal @a[scores={Q=1..}]
 scoreboard players remove @s will 20

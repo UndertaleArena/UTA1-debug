@@ -11,5 +11,6 @@ execute if score -clearcount store matches 1.. run function ut:move/effect/nomer
 
 playsound minecraft:block.glass.break player @s[tag=!nomercy_user] ~ ~ ~ 1.6 0.75
 title @s[tag=!nomercy_user] title ["",{"translate":"sts.nomercy"}]
+title @s[tag=!nomercy_user] subtitle ""
 title @s[tag=!nomercy_user] times 5 10 5
 scoreboard players set @s[tag=!nomercy_user] title_timer 15

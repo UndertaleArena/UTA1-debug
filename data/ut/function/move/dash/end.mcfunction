@@ -7,7 +7,7 @@ function ut:move/dash/end_tp
 execute positioned as @s if block ~ ~ ~ #ut:ray_trans if block ~ ~1 ~ #ut:ray_trans run scoreboard players set -dash_fail store 0
 
 ###DAMAGE
-summon minecraft:marker ~ ~ ~ {Tags:[atker,knife,killonhit],CustomName:'{"translate":"chr.chara.ch"}'}
+summon minecraft:marker ~ ~ ~ {Tags:[atker,knife,killonhit],CustomName:{"translate":"chr.chara.ch"}}
 
 scoreboard players set #damage damage 200
 scoreboard players operation #damage damage *= @s atk

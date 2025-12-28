@@ -16,4 +16,4 @@ tp @s @s
 
 effect clear @s minecraft:blindness
 effect clear @s minecraft:slow_falling
-function ut:move/effect/nofall/give
+# function ut:move/effect/nofall/give

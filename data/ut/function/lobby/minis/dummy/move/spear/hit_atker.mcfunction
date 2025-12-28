@@ -23,4 +23,4 @@ scoreboard players operation @s y_pos -= #neg y_pos
 execute if score @s y_pos matches ..-750 run scoreboard players set @s y_pos -750
 execute if score @s y_pos matches 1000.. run scoreboard players set @s y_pos 1000
 
-data merge entity @s {CustomName:'{"translate":"chr.undyne.mpn"}'}
+data merge entity @s {CustomName:{"translate":"chr.undyne.mpn"}}

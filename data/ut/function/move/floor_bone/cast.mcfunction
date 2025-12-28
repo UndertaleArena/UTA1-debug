@@ -1,6 +1,6 @@
 #By Nebulirion
 
-summon minecraft:marker ~ ~ ~ {Tags:[blue_attack,prj,prj_sp,summon,move],CustomName:'{"translate":"chr.papyrus.dtn"}'}
+summon minecraft:marker ~ ~ ~ {Tags:[blue_attack,prj,prj_sp,summon,move],CustomName:{"translate":"chr.papyrus.dtn"}}
 
 scoreboard players set #this damage 100
 scoreboard players set #this lifetime 52

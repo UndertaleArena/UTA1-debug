@@ -4,9 +4,9 @@ tp @s ~0.0002 ~-0.004 ~0.0003
 
 particle minecraft:sneeze ~-.1 ~-.2 ~-.15 0 0 0 0.05 1 normal @a[scores={Q=3..}]
 
-execute store result score cmd store run data get entity @s ArmorItems[3].components."minecraft:custom_model_data"
+execute store result score cmd store run data get entity @s equipment.head.components."minecraft:custom_model_data".floats[0]
 scoreboard players add cmd store 1
-execute store result entity @s ArmorItems[3].components."minecraft:custom_model_data" int 1 run scoreboard players get cmd store 
+execute store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] int 1 run scoreboard players get cmd store 
 
 scoreboard players add @s life 1
 

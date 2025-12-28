@@ -1,13 +1,17 @@
 #By Nebulirion
 
-#Team Mode: If only one team, it wins.
+execute if score G_SwitchSide gamerulemode matches 0 run return run function ut:game/win
 
-#scoreboard players set #player tid 0
-#scoreboard players operation #player tid = @r[tag=playing] tid
-#
-#execute as @a if score @s tid = #player tid run tag @s add winner
-#
-#execute unless entity @a[tag=playing,tag=!winner] as @e[tag=team_spawn,scores={maplock=1}] if score @s tid = #player tid run function ut:game/team/win_round
-##  
-#
-#tag @a remove winner
+tag @a remove winner
+execute if score #round game matches 1 run tellraw @a ["",{"translate":"pfx.game"},{"translate":"cht.switchside"}]
+execute if score #round game matches 1 run title @a title [""]
+execute if score #round game matches 1 run title @a subtitle ["",{"translate":"cht.switchside"}]
+execute if score #round game matches 1 run title @a times 10 40 10
+
+scoreboard players set #timerlocker game 1
+
+execute store result storage ut:macro Round int 1 run scoreboard players get #round game
+execute if score #round game matches 1..2 run function ut:game/siege/record_round_data with storage ut:macro
+
+execute if score #round game matches 1 run return run function ut:game/siege/reset_round_pre
+execute if score #ended game matches 0 if score #round game matches 2 run function ut:game/siege/wd_s_c

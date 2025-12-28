@@ -11,7 +11,7 @@ scoreboard players operation #atker pid = @s pid
 scoreboard players operation #atker tid = @s tid
 scoreboard players operation #damage damage = @s damage
 
-execute as @e[distance=..3,tag=prj,tag=reflectable] unless score @s tid = #atker tid run function ut:move/bomb/explode_prj
+execute as @e[distance=..3,tag=prj2,tag=reflectable] unless score @s tid = #atker tid at @s run function ut:move/bomb/explode_prj
 execute positioned ~ ~-1 ~ as @a[distance=..3,tag=playing,tag=!untargetable] unless score @s tid = #atker tid run function ut:move/bomb/explode_hitcheck
 
 tag @s remove atker

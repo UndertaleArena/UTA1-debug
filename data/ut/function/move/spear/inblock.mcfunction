@@ -1,6 +1,8 @@
 ###Generated from Nebulagen made By Nebulirion
 #06/12/2024, 16:37:49
 
+###MISS PASSIVE
+function ut:move/passive/undyne/miss_detect
 ###EXTRA
 tp @s ~-0.0 ~-0.93 ~-0.0 ~ ~
 ###MAIN

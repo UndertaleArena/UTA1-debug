@@ -10,7 +10,7 @@ scoreboard players reset * bid
 tag @a[tag=tut_p] add need_bid
 #
 execute as @a[tag=need_bid] run function ut:player/bossbar/give_bid_loop
-function ut:player/bossbar/adjust
+function ut:player/bossbar/adjust_tut
 #disable dt
 bossbar set p1_dt players
 bossbar set p2_dt players

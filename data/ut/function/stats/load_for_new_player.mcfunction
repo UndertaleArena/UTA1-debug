@@ -1,10 +1,16 @@
 #By Nebulirion
 
-gamerule announceAdvancements false
+# Fetch Data (Provide Creation Prepending won't exist Redundant)
+function ut:stats/player_data/take
+# If newly created, store back
+data modify storage utstats:main Data prepend from storage utstats:main LoadedPlayer
+
+# START loading
+
+gamerule show_advancement_messages false
 
 #Get DT and GF Stat Score
-data modify storage utstats:main LoadedStats set from storage utstats:main LoadedPlayer.Player
-function ut:stats/get_stats
+function ut:stats/player_data/stats_player
 scoreboard players operation @s gamesfinished = -GamesFinished stat
 scoreboard players operation @s st_dtuse = -DTused stat
 
@@ -146,4 +152,4 @@ execute if data storage utstats:main LoadedPlayer.Scores{tag_vip:1b} run tag @s 
 #execute if data storage utstats:main LoadedPlayer.Advancements{ut_other_tut_tuto30:1b} run advancement grant @s only ut:other/tut/tuto30
 #execute if data storage utstats:main LoadedPlayer.Advancements{ut_other_tut_tutoroot:1b} run advancement grant @s only ut:other/tut/tutoroot
 
-gamerule announceAdvancements true
+gamerule show_advancement_messages true

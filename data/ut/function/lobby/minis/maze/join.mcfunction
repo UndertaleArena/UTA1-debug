@@ -13,5 +13,5 @@ execute store result score @s maze_z run data get entity @s Pos[2] 100
 scoreboard players set @s maze_timer 0
 scoreboard players set @s nojump_timer 490129
 
-attribute @s minecraft:generic.jump_strength modifier add ut:maze_effect -.42 add_value
+attribute @s minecraft:jump_strength modifier add ut:maze_effect -.42 add_value
 effect clear @s jump_boost

@@ -1,8 +1,8 @@
 #By Nebulirion
 
 
-data modify entity @s[tag=red] ArmorItems[3].id set value "minecraft:player_head"
-data modify entity @s[tag=!red] ArmorItems[3].id set value "minecraft:red_terracotta"
+data modify entity @s[tag=red] equipment.head.id set value "minecraft:player_head"
+data modify entity @s[tag=!red] equipment.head.id set value "minecraft:red_terracotta"
 
 tag @s[tag=red] add hadred
 tag @s remove red

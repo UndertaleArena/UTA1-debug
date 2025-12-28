@@ -1,4 +1,4 @@
-#By Nebulirion
+#By Nebulirion & Ds_Squid
 
 execute unless score #silentcap store matches 1 run tellraw @a[scores={tbid=1}] [{"translate":"pfx.game"},{"translate":"cht.gms.2a","with":[{"selector":"@a[tag=inpoint_p,scores={tbid=1}]"}]}]
 execute unless score #silentcap store matches 1 run tellraw @a[scores={tbid=2}] [{"translate":"pfx.game"},{"translate":"cht.gms.2b","with":[{"selector":"@a[tag=inpoint_p,scores={tbid=1}]"}]}]
@@ -11,6 +11,10 @@ scoreboard players operation @s gamescore = -GoalA gamescore
 
 scoreboard players add -Timer gamescore 300
 
+scoreboard players set -PrograssBonus gamescore 5000
+scoreboard players add -Prograss gamescore 5000
+
+scoreboard players set -Overtime gamescore 0
 #####MAP
 function ut:map/s_ruins/rock/end_p
 function ut:map/s_ruins/spike/disable

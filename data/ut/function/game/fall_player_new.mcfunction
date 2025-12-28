@@ -12,8 +12,8 @@ tag @s remove playing_tut
 tag @s remove playing
 title @s actionbar ""
 
-title @s title {"translate":"ttl.main"}
-title @s subtitle {"translate":"ttl.sub"}
+title @s title {"translate":"ttl.main","fallback":"§lUndertale§r §e§lArena§r"}
+title @s subtitle {"translate":"ttl.sub","fallback":"§cRemember the Resource Pack§r"}
 title @s times 5 40 5
 tellraw @s {"translate":"§c§l[!] Please install the Resource Pack!§r"}
 execute at @s run playsound minecraft:entity.wither.spawn player @s ~ ~ ~ 1 1

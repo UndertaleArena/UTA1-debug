@@ -9,7 +9,7 @@ scoreboard players operation #damage damage = @s damage
 
 #####
 ###
-#
+# store Curr Pos and End Point to m[]2, m[]3
 scoreboard players operation #mx2 store = @s x_tar
 scoreboard players operation #my2 store = @s y_tar
 scoreboard players operation #mz2 store = @s z_tar

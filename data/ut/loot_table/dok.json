@@ -16,7 +16,7 @@
                                     "max": 184,
                                     "min": 1
                                   },
-                                  "attribute": "generic.luck",
+                                  "attribute": "luck",
                                   "operation": "add_value",
                                   "id": "hihinebhere",
                                   "slot": "offhand"

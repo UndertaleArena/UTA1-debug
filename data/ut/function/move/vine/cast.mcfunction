@@ -2,7 +2,7 @@
 
 playsound minecraft:entity.chicken.egg player @a ~ ~ ~ 2 0.8
 
-summon minecraft:husk ^ ^-.2 ^ {Tags:[summon,move,vine,inair,prj,prj_sp,motion_prj,reflectable],NoGravity:1b,Invulnerable:1b,Silent:1b,NoAI:1b,ArmorItems:[{},{},{},{id:"minecraft:wheat_seeds",count:1b}],CustomNameVisible:0b,Team:"nocol",IsBaby:1b}
+summon minecraft:husk ^ ^-.2 ^ {Tags:[summon,move,vine,inair,prj,prj_sp,motion_prj,reflectable],NoGravity:1b,Invulnerable:1b,Silent:1b,NoAI:1b,equipment:{head:{id:"minecraft:wheat_seeds",count:1b}},CustomNameVisible:0b,Team:"nocol",IsBaby:1b}
 
 #####
 scoreboard players set #this damage 50

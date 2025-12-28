@@ -1,5 +1,7 @@
 #By Nebulirion
 
+#execute as @a run function ut:system/statscore/end_game
+
 #####GameMode (Win Message)
 execute if score -GameMode game matches 1 run function ut:game/arena/win
 execute if score -GameMode game matches 2 run function ut:game/boss/win

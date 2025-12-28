@@ -1,7 +1,6 @@
 #By Nebulirion
 
 ###Movement
-function ut:player/movetest
 scoreboard players reset @s shift
 
 #Void

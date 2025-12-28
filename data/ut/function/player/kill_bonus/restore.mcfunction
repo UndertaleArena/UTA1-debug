@@ -10,7 +10,8 @@ scoreboard players operation #gain hp -= #extra hp
 scoreboard players operation @s[tag=!hp_lock] hp += #gain hp
 execute if entity @s[tag=!hp_lock] run particle happy_villager ~ ~.9 ~ 0.3 0.45 0.3 0 20 normal @a[scores={Q=1..}]
 function ut:player/hp/gain
-scoreboard players operation #gain dt = @s dtmax
+execute if entity @s[tag=!passive_papyrus] run scoreboard players operation #gain dt = @s dtmax
+execute if entity @s[tag=passive_papyrus] run scoreboard players operation #gain dt = @s dthalf
 scoreboard players operation #gain dt /= 5 const
 execute if entity @s[tag=!dt_lock] run function ut:player/dt/gain
 scoreboard players operation #gain will = @s willmax

@@ -38,6 +38,7 @@ execute if entity @s[tag=dummy_charge_user] run function ut:move/dummy_charge/lo
 execute if entity @s[tag=bomb_mtt_user] run function ut:move/bomb_mtt/loop
 execute if entity @s[tag=bomb_ex_user] run function ut:move/bomb_ex/loop
 execute if entity @s[tag=counter_dodge] run function ut:move/dodge/loop
+execute if entity @s[tag=counter_dodgep] run function ut:move/dodge/passive/loop
 execute if entity @s[tag=counter_block] run function ut:move/block/loop
 execute if entity @s[tag=ghost_user] run function ut:move/ghost/loop
 execute if entity @s[tag=warp_user] run function ut:move/warp/loop

@@ -20,6 +20,6 @@ execute store result entity @s Pos[2] double 0.01 run scoreboard players get #zp
 
 execute unless score #zpos store = #zposog store run particle block{block_state:andesite} ~ ~.1 ~ .5 0 .5 .35 8 normal @a[scores={Q=2..}]
 
-execute if score #zpos store < #zposog store run tp @e[type=boat,tag=hitboatF,limit=1,sort=nearest] ~ ~0.59 ~0.3125
-execute if score #zpos store > #zposog store run tp @e[type=boat,tag=hitboatF,limit=1,sort=nearest] ~ ~0.59 ~-.3125
-execute if score #zpos store = #zposog store run tp @e[type=boat,tag=hitboatF,limit=1,sort=nearest] ~ ~0.59 ~
+execute if score #zpos store < #zposog store run tp @e[limit=1,sort=nearest,tag=hitboatF,type=#boat] ~ ~0.59 ~0.3125
+execute if score #zpos store > #zposog store run tp @e[limit=1,sort=nearest,tag=hitboatF,type=#boat] ~ ~0.59 ~-.3125
+execute if score #zpos store = #zposog store run tp @e[limit=1,sort=nearest,tag=hitboatF,type=#boat] ~ ~0.59 ~

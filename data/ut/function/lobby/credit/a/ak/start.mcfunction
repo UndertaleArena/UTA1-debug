@@ -2,7 +2,7 @@
 #this is about the builder from the UTA production team minecraft id iloveYou0417
 #Thank you so much for your help during the creation of this map!!!
 
-#say hi i'm Ak i'm not finished yet :v
+#say hi im Ak im not finished yet :v
 
 execute as @e[tag=cnextex] at @s run tp @s ~ ~ ~ 99 ~
 

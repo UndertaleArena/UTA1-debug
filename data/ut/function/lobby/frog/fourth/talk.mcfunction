@@ -1,4 +1,4 @@
-#By Nebulirion while in class (im paying attention so don't judge me ok)
+#By Nebulirion while in class (im paying attention so dont judge me ok)
 
 scoreboard players set @s ray_distance -625
 

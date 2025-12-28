@@ -5,7 +5,7 @@ playsound minecraft:entity.ender_dragon.ambient player @a ~ ~ ~ 0.25 2
 scoreboard players set @s plt1 64
 execute anchored eyes positioned ^-.25 ^-.1 ^1 facing ^.25 ^ ^20 if score @s plt1 matches 1.. if block ~ ~ ~ #ut:trans run function ut:move/chaos_buster/use_blaster_loop
 
-summon minecraft:marker ~ ~ ~ {Tags:[atker,blaster,user_direction],CustomName:'{"translate":"chr.asriel.mpn2"}'}
+summon minecraft:marker ~ ~ ~ {Tags:[atker,blaster,user_direction],CustomName:{"translate":"chr.asriel.mpn2"}}
 
 scoreboard players set #damage damage 300
 scoreboard players operation #damage damage *= @s atk

@@ -3,14 +3,15 @@
 #stick item remove
 execute as @e[tag=stickonhit] if score @s sid = #user pid run function ut:void
 
-execute as @e[tag=save_point,limit=1] at @s run tp @s ~ ~-0.4 ~
-tp @s @e[tag=save_point,limit=1]
+# find savepoint(tmp tag for tag=save with same pid)
+execute as @e[tag=save_point] at @s run tp @s ~ ~-0.4 ~
+tp @s @e[type=marker,tag=save_point,limit=1]
 function ut:move/teleport
 
 effect give @s minecraft:slow_falling 1 0 true
 
 scoreboard players reset @s advancement_c
-function ut:move/save/item_save
+function ut:move/save/item/save
 
 particle minecraft:totem_of_undying ~ ~1 ~ 0.2 0.4 0.2 0.5 80 force @a
 playsound minecraft:entity.player.levelup player @a ~ ~ ~ 1 1
@@ -20,17 +21,19 @@ execute at @e[tag=save_point,limit=1] run playsound minecraft:entity.player.leve
 
 tag @s[tag=amalgamate] add amalgamate_after_save
 tag @s[tag=effect_finalrush] add finalrush_after_save
-
 function ut:move/player_loop/fullstop
-
 execute if entity @s[tag=amalgamate_after_save] run function ut:move/injection/target
 execute if entity @s[tag=finalrush_after_save] run function ut:move/effect/finalrush/give
+execute if entity @s[tag=!effect_immune] run function ut:move/save/load_immune
+# title remove
+title @s title ""
+title @s subtitle ""
 
 tag @s remove amalgamate_after_save
 tag @s remove finalrush_after_save
-
 #DT
-scoreboard players set @s dt 0
+execute if entity @s[tag=!passive_papyrus] run function ut:player/dt/reset
+execute if entity @s[tag=passive_papyrus] run scoreboard players operation @s dt = @s dtmath
 #HP
 scoreboard players operation #gain hp = @s hpmax
 scoreboard players operation #gain hp /= 4 const

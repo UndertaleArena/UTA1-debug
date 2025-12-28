@@ -1,7 +1,7 @@
 #by Nebulirion
 
 data modify block 255 0 255 Items set value []
-data modify storage ut:temp OFFITEM set from entity @s Inventory[{Slot:-106b}]
+data modify storage ut:temp OFFITEM set from entity @s equipment.offhand
 data modify storage ut:temp OFFITEM.Slot set value 0b
 data modify block 255 0 255 Items append from storage ut:temp OFFITEM
 

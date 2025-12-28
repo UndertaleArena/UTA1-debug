@@ -3,7 +3,7 @@
 #say created new HP BAR!
 
 #check on this
-execute at @s anchored eyes rotated ~ 0 run summon minecraft:armor_stand ^ ^.5 ^ {Tags:[summon,move,name,spc],Marker:1,CustomName:'""',CustomNameVisible:1b}
+execute at @s anchored eyes rotated ~ 0 run summon minecraft:text_display ^ ^.5 ^ {Tags:[summon,move,name,spc],text:"",billboard:"center",background:0,teleport_duration:3}
 
 scoreboard players set #this damage 0 
 scoreboard players set #this lifetime -1

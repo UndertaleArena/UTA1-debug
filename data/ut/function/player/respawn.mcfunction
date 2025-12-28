@@ -28,6 +28,8 @@ function ut:player/restore
 function ut:move/effect/untargetable/give
 scoreboard players set @s untarget_timer 100
 #
+execute if entity @s[tag=passive_undyne] run function ut:move/passive/undyne/clear
+#
 execute if score swapCharacter gamerule matches 1 if score -GameMode game matches 4..7 unless score -injecttaglock store matches 1 run function ut:system/chrswitch/inventory
 execute if score -GameMode game matches 7 run function ut:move/effect/finalrush/give_check
 #

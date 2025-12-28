@@ -3,13 +3,13 @@
 scoreboard players set @s unloadtime 40
 function ut:player/infight/use
 
-scoreboard players set @s plt2 24
+scoreboard players set @s plt2 30
 execute if entity @s[gamemode=survival] run tag @s add dig_os
 execute if entity @s[gamemode=adventure] run tag @s add dig_oa
 execute if entity @s[gamemode=creative] run tag @s add dig_oc
 gamemode spectator
 
-summon minecraft:armor_stand ~ ~1.5 ~ {Tags:[dig_use,dig_in,dig_animation,summon,hit],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:gold_nugget",count:1b}],Pose:{Head:[0f,0f,0f]},CustomName:'"Flowey"'}
+summon minecraft:armor_stand ~ ~1.5 ~ {Tags:[dig_use,dig_in,dig_animation,summon,hit],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,equipment:{head:{id:"minecraft:gold_nugget",count:1b}},Pose:{Head:[0f,0f,0f]},CustomName:"Flowey"}
 
 #spectate @e[tag=summon,limit=1] @s 
 

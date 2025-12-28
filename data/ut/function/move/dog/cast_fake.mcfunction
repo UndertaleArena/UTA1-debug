@@ -1,7 +1,7 @@
 #By Nebulirion
 
-summon minecraft:husk ~ ~0.4 ~ {Tags:[dog_model,summon,move],NoGravity:1b,Silent:1b,IsBaby:1b,Invulnerable:1b,NoAI:1b,ArmorItems:[{},{},{},{id:"quartz",Count:1,components:{custom_model_data:1}}],HandItems:[{},{}],Glowing:1b,PersistenceRequired:1b,Team:"nocol"}
-summon minecraft:marker ~ ~1 ~ {Tags:[annoying_dog,summon,move,spc,fake_dog],NoGravity:1b,Silent:1b,Invulnerable:1b,CustomName:'{"translate":"dog.dog"}'}
+summon minecraft:husk ~ ~0.4 ~ {Tags:[dog_model,summon,move],NoGravity:1b,Silent:1b,IsBaby:1b,Invulnerable:1b,NoAI:1b,equipment:{head:{id:"quartz",Count:1,components:{custom_model_data:{floats:[1]}}}},Glowing:1b,PersistenceRequired:1b,Team:"nocol"}
+summon minecraft:marker ~ ~1 ~ {Tags:[annoying_dog,summon,move,spc,fake_dog],NoGravity:1b,Silent:1b,Invulnerable:1b,CustomName:{"translate":"dog.dog"}}
 
 scoreboard players set #this pid 0
 scoreboard players set #this tid 0

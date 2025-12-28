@@ -3,7 +3,7 @@
     "modifiers": [
         {
             "id": "ut:random",
-            "attribute": "minecraft:generic.luck",
+            "attribute": "minecraft:luck",
             "operation": "add_value",
             "slot": "mainhand",
             "amount": {

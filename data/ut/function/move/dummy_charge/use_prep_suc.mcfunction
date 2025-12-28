@@ -11,7 +11,7 @@ scoreboard players operation @s plt2b = #id plt2b
 scoreboard players set @s cdcooldown 2
 scoreboard players set @s unloadtime 10
 
-attribute @s generic.movement_speed modifier add dummychargeslow -0.8 add_multiplied_total
+attribute @s movement_speed modifier add dummychargeslow -0.8 add_multiplied_total
 
 scoreboard players set @s plt1 30
 

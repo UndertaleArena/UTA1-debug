@@ -4,7 +4,7 @@ scoreboard players set @s unloadtime 6
 scoreboard players add @s mpcooldown 2
 #function ut:player/infight/use
 
-attribute @s generic.movement_speed modifier add pelletslow -0.4 add_multiplied_total
+attribute @s movement_speed modifier add pelletslow -0.4 add_multiplied_total
 
 scoreboard players operation @s mp += @s mpcost
 scoreboard players set @s plt1 25

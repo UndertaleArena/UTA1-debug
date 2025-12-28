@@ -6,14 +6,14 @@ scoreboard players set max random 3000
 
 item replace entity 0-0-0-0-1 container.0 with bread
 item modify entity 0-0-0-0-1 container.0 ut:random
-execute store result score -x store run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score -x store run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers"[0].amount
 
 scoreboard players set min random -6000
 scoreboard players set max random -3000
 
 item replace entity 0-0-0-0-1 container.0 with bread
 item modify entity 0-0-0-0-1 container.0 ut:random
-execute store result score -y store run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score -y store run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers"[0].amount
 
 execute store result score -X store run data get entity @s Rotation[0] 100
 execute store result score -Y store run data get entity @s Rotation[1] 100

@@ -1,13 +1,13 @@
 #By Nebulirion
 
 data modify block 255 0 255 Items set value [{Slot:0b,id:"minecraft:glass",count:1b}]
-data modify block 255 0 255 Items[0].components set from entity @s Inventory[{Slot:103b}].components
+data modify block 255 0 255 Items[0].components set from entity @s equipment.head.components
 
-data modify block 255 0 255 Items[0].components."minecraft:custom_data".ArmorItems set value []
-data modify block 255 0 255 Items[0].components."minecraft:custom_data".ArmorItems append from entity @s Inventory[{Slot:103b}]
-data modify block 255 0 255 Items[0].components."minecraft:custom_data".ArmorItems append from entity @s Inventory[{Slot:102b}]
-data modify block 255 0 255 Items[0].components."minecraft:custom_data".ArmorItems append from entity @s Inventory[{Slot:101b}]
-data modify block 255 0 255 Items[0].components."minecraft:custom_data".ArmorItems append from entity @s Inventory[{Slot:100b}]
+data modify block 255 0 255 Items[0].components."minecraft:custom_data".Armors set value []
+data modify block 255 0 255 Items[0].components."minecraft:custom_data".Armors append from entity @s equipment.head
+data modify block 255 0 255 Items[0].components."minecraft:custom_data".Armors append from entity @s equipment.chest
+data modify block 255 0 255 Items[0].components."minecraft:custom_data".Armors append from entity @s equipment.legs
+data modify block 255 0 255 Items[0].components."minecraft:custom_data".Armors append from entity @s equipment.feet
 
 item replace entity @s armor.head with air
 item replace entity @s armor.chest with air

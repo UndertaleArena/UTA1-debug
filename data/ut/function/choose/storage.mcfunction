@@ -11,6 +11,7 @@ execute store result score @s dtmax run data get storage ut:chrs Temp.DtMax
 execute store result score @s speed run data get storage ut:chrs Temp.Speed
 execute if score @s mpmax matches 1.. run scoreboard players set @s mlmax 20
 execute if score @s mpmax matches 0 run scoreboard players set @s mlmax 30
+scoreboard players operation @s dthalf = @s dtmax
 
 summon item_frame 255 3 255 {Tags:[item_loader],UUID:[I;0,0,0,1],Fixed:1b}
 

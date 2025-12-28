@@ -1,7 +1,7 @@
 #Original By Nebulirion, edited by SY
 
 # bonus: s_void restoring
-fill ~-3 ~ ~-3 ~3 ~ ~3 structure_void replace barrel{Items:[{Slot:0b,id:"minecraft:sponge",count:1,components:{"minecraft:custom_data":{s_void:1b}}}],Lock:"s_void"} 
+fill ~-3 ~ ~-3 ~3 ~ ~3 structure_void replace barrel{Items:[{Slot:0b,id:"minecraft:sponge",count:1,components:{"minecraft:custom_data":{s_void:1b}}}],lock:{items:"minecraft:structure_void",components:{"minecraft:item_name":"s_void"}}}
 
 #checking vines
 function ut:move/delete/vine_restore_check

@@ -1,6 +1,6 @@
 #By Nebulirion
 
-execute unless block ~ ~ ~ #minecraft:carpets run clone ~ ~ ~ ~ ~ ~ ~ 1 ~ 
+execute unless block ~ ~ ~ #minecraft:carpets run clone ~ ~ ~ ~ ~ ~ ~ 1 ~
 
 execute if score @s tid matches 1 run setblock ~ ~ ~ red_carpet
 execute if score @s tid matches 2 run setblock ~ ~ ~ light_blue_carpet

@@ -12,7 +12,7 @@
         },
         "icon": {
             "id": "minecraft:nether_brick",
-            "components": {"custom_model_data":8}
+            "components": {"custom_model_data":{"floats":[8]}}
         },
         "frame": "task",
         "show_toast": false,

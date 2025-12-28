@@ -2,4 +2,4 @@
 
 execute at @s run playsound minecraft:entity.enderman.warp player @s ~ ~ ~ .4 1
 
-item replace entity @s[gamemode=spectator] inventory.13 with bone_meal[custom_model_data=9,custom_name='""',custom_data={clear_on_respawn:1b},hide_tooltip={}]
+item replace entity @s[gamemode=spectator] inventory.13 with bone_meal[custom_model_data={floats:[9]},custom_name="",custom_data={clear_on_respawn:1b},tooltip_display={hide_tooltip:true}]

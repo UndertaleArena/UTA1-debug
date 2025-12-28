@@ -17,4 +17,4 @@
 #        ████        ████                              
 #            ████████                                  
                                                                           
-#What? what do you mean this isn't the type of egg you're looking for
+#What? what do you mean this isnt the type of egg youre looking for

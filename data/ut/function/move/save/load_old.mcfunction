@@ -4,7 +4,7 @@ execute at @e[tag=save_point,limit=1] run tp @s ~ ~ ~ ~ ~
 effect give @s minecraft:slow_falling 1 0 true
 
 scoreboard players reset @s advancement_c
-function ut:move/save/item_save
+function ut:move/save/item/save
 
 particle minecraft:totem_of_undying ~ ~1 ~ 0.2 0.4 0.2 0.5 80 force @a
 playsound minecraft:entity.player.levelup player @a ~ ~ ~ 1 1

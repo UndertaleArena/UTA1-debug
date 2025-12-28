@@ -1,7 +1,7 @@
 #By Nebulirion
 
 #召喚實體
-summon minecraft:armor_stand ^ ^.5 ^ {Tags:[summon2,ak_bullet,credit_as,cmove,axeblock,summon],Motion:[0.0d,0.0d,0.0d],NoGravity:0b,CustomName:'{"translate":"chr.ak.chn2"}',ArmorItems:[{},{},{},{id:"minecraft:grass_block",count:1b}],DisabledSlots:3620671,Marker:0b}
+summon minecraft:armor_stand ^ ^.5 ^ {Tags:[summon2,ak_bullet,credit_as,cmove,axeblock,summon],Motion:[0.0d,0.0d,0.0d],NoGravity:0b,CustomName:{"translate":"chr.ak.chn2"},equipment:{head:{id:"minecraft:grass_block",count:1b}},DisabledSlots:3620671,Marker:0b}
 
 #Motion
 execute store result score x1 x_pos run data get entity @e[tag=summon,limit=1] Pos[0] 1000

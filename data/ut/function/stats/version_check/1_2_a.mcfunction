@@ -7,6 +7,6 @@ execute if score -thiscount store < -chrcount store run function ut:stats/versio
 data modify storage utstats:main LoadedPlayer.Gamemodes set value []
 execute store result score -modecount store if data storage ut:modes Data[]
 scoreboard players remove -modecount store 1 
-execute if score -modecount store matches 1.. run function ut:stats/create_player_data/gamemode_loop
+execute if score -modecount store matches 1.. run function ut:stats/player_data/create/gamemode_loop
 
-data modify storage utstats:main LoadedPlayer.DataVersion set value "1.2.a" 
+data modify storage utstats:main LoadedPlayer.DataVersion set value "1.2.a"

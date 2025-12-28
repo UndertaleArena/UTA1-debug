@@ -11,29 +11,30 @@ summon armor_stand ~ ~ ~ {Tags:[random5000,summon],Marker:1b}
 
 scoreboard players set -tobying store 1
 execute as @e[tag=random5000,limit=1] run function ut:choose/random_chr
-data modify entity @e[tag=random5000,limit=1] ArmorItems[3] set from storage ut:chrs Temp.MpMove
+data modify entity @e[tag=random5000,limit=1] equipment.head set from storage ut:chrs Temp.MpMove
 item replace entity @s hotbar.0 from entity @e[tag=random5000,limit=1] armor.head
 execute store result score @s mpmax run data get storage ut:chrs Temp.MpMax
 
 scoreboard players operation -toby advancement = @e[tag=random5000,limit=1] chr
 
 execute as @e[tag=random5000,limit=1] run function ut:choose/random_chr
-data modify entity @e[tag=random5000,limit=1] ArmorItems[3] set from storage ut:chrs Temp.CdMove
+data modify entity @e[tag=random5000,limit=1] equipment.head set from storage ut:chrs Temp.CdMove
 item replace entity @s hotbar.1 from entity @e[tag=random5000,limit=1] armor.head
 
 execute unless score -toby advancement = @e[tag=random5000,limit=1] chr run scoreboard players set -toby advancement 0
 
 execute as @e[tag=random5000,limit=1] run function ut:choose/random_chr
-data modify entity @e[tag=random5000,limit=1] ArmorItems[3] set from storage ut:chrs Temp.DtMove
+data modify entity @e[tag=random5000,limit=1] equipment.head set from storage ut:chrs Temp.DtMove
 item replace entity @s hotbar.2 from entity @e[tag=random5000,limit=1] armor.head
 execute store result score @s dtmax run data get storage ut:chrs Temp.DtMax
+scoreboard players operation @s dthalf = @s dtmax
 
 execute unless score -toby advancement = @e[tag=random5000,limit=1] chr run scoreboard players set -toby advancement 0
 
 execute as @e[tag=random5000,limit=1] run function ut:choose/random_chr
 item replace block 255 0 255 container.21 with minecraft:leather_chestplate 1
 data modify block 255 0 255 Items[{Slot:21b}].components set from storage ut:chrs Temp.ChestItem.components
-data modify block 255 0 255 Items[{Slot:21b}].components."minecraft:dyed_color".rgb set value 16777215
+data modify block 255 0 255 Items[{Slot:21b}].components."minecraft:dyed_color" set value 16777215
 scoreboard players set -tobying store 0
 
 execute unless score -toby advancement = @e[tag=random5000,limit=1] chr run scoreboard players set -toby advancement 0

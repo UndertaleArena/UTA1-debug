@@ -1,6 +1,6 @@
 #By Nebulirion
 
-summon minecraft:armor_stand ^ ^-0.1 ^ {Tags:[move,mettabot,prj,prj_sp,summon,summon2],Small:0b,NoGravity:1b,Invisible:0b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:iron_nugget",count:1b}],CustomName:'{"translate":"chr.mettaton.dtn1"}'}
+summon minecraft:armor_stand ^ ^-0.1 ^ {Tags:[move,mettabot,prj,prj_sp,summon,summon2],Small:0b,NoGravity:1b,Invisible:0b,Marker:1b,Invulnerable:1b,equipment:{head:{id:"minecraft:iron_nugget",count:1b}},CustomName:{"translate":"chr.mettaton.dtn1"}}
 
 scoreboard players set #this lifetime 180
 scoreboard players operation #this damage *= @s atk

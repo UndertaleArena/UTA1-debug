@@ -34,7 +34,7 @@ scoreboard players set -TeamCount game 0
 tag @a[tag=play_game] add counting_team
 execute as @a[tag=play_game] run function ut:game/count_team
 
-#if there's at least one team with more than 1 player, set -TeamMode to 1
+#if theres at least one team with more than 1 player, set -TeamMode to 1
 scoreboard players set -TeamMode game 0
 execute if score -PlayerCount game > -TeamCount game run scoreboard players set -TeamMode game 1
 execute if score -GameMode game matches 4.. run scoreboard players set -TeamMode game 1
@@ -43,8 +43,8 @@ execute if score -GameMode game matches 4.. run scoreboard players set -TeamMode
 function ut:game/gamerule
 scoreboard objectives setdisplay below_name
 execute if score hpDisplay gamerule matches 1 run scoreboard objectives setdisplay below_name hpdis
-execute if score fallDamage gamerule matches 0 run gamerule fallDamage false
-execute if score fallDamage gamerule matches 1 run gamerule fallDamage true
+execute if score fallDamage gamerule matches 0 run gamerule fall_damage false
+execute if score fallDamage gamerule matches 1 run gamerule fall_damage true
 function ut:system/team/collision_on
 
 #####Setup Stat Tracker

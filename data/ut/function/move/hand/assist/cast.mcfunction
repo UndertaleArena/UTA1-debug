@@ -3,7 +3,7 @@
 #say assist summon
 
 #summon assist point
-execute at @s anchored eyes rotated ~ 0 run summon minecraft:marker ^ ^ ^ {Tags:[summon,move,hand_assist,spc,your_assist],CustomName:'"hand_assist"',Rotation:[360.0f,0.0f]}
+execute at @s anchored eyes rotated ~ 0 run summon minecraft:marker ^ ^ ^ {Tags:[summon,move,hand_assist,spc,your_assist],CustomName:"hand_assist",Rotation:[360.0f,0.0f]}
 
 scoreboard players set #this damage 0
 scoreboard players set #this lifetime -1

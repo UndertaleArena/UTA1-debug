@@ -18,7 +18,7 @@ execute unless score -TeamCount game matches 2.. run scoreboard players set allo
 execute if score allow_start store matches 1 if score -TeamMode game matches 1 if score -GameMode game matches 2 run tellraw @s [{"translate": "pfx.warning"},{"translate": "cht.set.wrn5"}]
 execute if score -TeamMode game matches 1 if score -GameMode game matches 2 run scoreboard players set allow_start store 0
 
-###CAN'T START IF MAP NOT UNLOCKED
+###CANT START IF MAP NOT UNLOCKED
 execute if score allow_start store matches 1 if score -locked map matches 1 run tellraw @s [{"translate": "pfx.warning"},{"translate": "cht.set.wrn6"}]
 execute if score -locked map matches 1 run scoreboard players set allow_start store 0
 

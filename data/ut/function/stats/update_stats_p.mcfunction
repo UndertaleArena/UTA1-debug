@@ -1,7 +1,6 @@
 #By Nebulirion
 
-data modify storage utstats:main LoadedStats set from storage utstats:main LoadedPlayer.Player
-function ut:stats/get_stats
+function ut:stats/player_data/stats_player
 function ut:stats/update_stats
 
 function ut:stats/display/calculate_skill

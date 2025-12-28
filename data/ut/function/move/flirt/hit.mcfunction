@@ -6,6 +6,7 @@ execute at @s run particle minecraft:angry_villager ~ ~1.5 ~ 0.2 0.2 0.2 0 4 nor
 playsound minecraft:item.bucket.empty_lava player @a ~ ~ ~ 1 2
 scoreboard players set #gain dt 300
 scoreboard players set #gain will 400
+scoreboard players set #wdmg ptsd_wdmg 10
 
 scoreboard players operation #target pid = @s pid
 execute as @e[tag=atker,limit=1] run function ut:move/hit_list/register
@@ -16,3 +17,4 @@ scoreboard players remove @s will 10
 function ut:player/will/lose
 execute unless entity @s[tag=effect_immune] run function ut:move/effect/infatuated/give
 execute as @a if score @s pid = #atker pid run function ut:move/flirt/adv_check
+execute as @a if score @s pid = #atker pid run function ut:move/flirt/cd

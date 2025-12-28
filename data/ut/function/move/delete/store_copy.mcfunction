@@ -11,7 +11,7 @@ execute positioned 256 0 -256 run setblock ~ 0 ~ bedrock
 clone ~-3 ~ ~-3 ~3 ~ ~3 257 1 -255 replace force
 
 #structure saving
-setblock ~-3 ~ ~-3 structure_block[mode=save]{sizeX:7,sizeY:1,sizeZ:7,posX:0,posY:1,posZ:0,name:"ut:delete_store",mode:"SAVE",ignoreEntities:1b,showboundingbox:0}
+setblock ~-3 ~ ~-3 structure_block[mode=save]{sizeX:7,sizeY:1,sizeZ:7,posX:0,posY:1,posZ:0,name:"ut:delete_store",mode:"SAVE",ignoreEntities:1b,showboundingbox:0b}
 execute store result block ~-3 ~ ~-3 sizeY int 1 run scoreboard players get t y_pos
 setblock ~-3 ~ ~-2 redstone_block destroy
 

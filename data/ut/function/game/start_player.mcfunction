@@ -12,10 +12,10 @@ execute if score -Enabled stat matches 1 run function ut:stats/start_player
 scoreboard players set @s istobychr 0
 execute if items entity @s armor.chest *[custom_data~{passive:"random"}] run scoreboard players set @s istobychr 1
 #forceChoose
-execute if data entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".passive run function ut:choose/force
+execute if data entity @s equipment.chest.components."minecraft:custom_data".passive run function ut:choose/force
 #forceRandom
-execute unless data entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".passive run tellraw @s ["",{"translate":"pfx.info"},{"translate":"cht.chr2"}]
-execute unless data entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".passive run function ut:choose/_tobyfox
+execute unless data entity @s equipment.chest.components."minecraft:custom_data".passive run tellraw @s ["",{"translate":"pfx.info"},{"translate":"cht.chr2"}]
+execute unless data entity @s equipment.chest.components."minecraft:custom_data".passive run function ut:choose/_tobyfox
 #Random
 execute if items entity @s armor.chest *[custom_data~{passive:"random"}] run function ut:choose/random
 #Score

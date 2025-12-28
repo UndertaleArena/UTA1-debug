@@ -3,6 +3,10 @@
 execute as @a[scores={gpid=1..}] if score @s gpid > #max_bossbar store run scoreboard players operation #max_bossbar store = @s gpid
 scoreboard players operation #play_bossbar store = #max_bossbar store
 execute store result storage ut:macro Bossbar.Current int 1 run scoreboard players get #play_bossbar store
+function ut:player/bossbar/macro/loop/add with storage ut:macro Bossbar
+
+scoreboard players operation #play_bossbar store = #max_bossbar store
+execute store result storage ut:macro Bossbar.Current int 1 run scoreboard players get #play_bossbar store
 function ut:player/bossbar/macro/loop/reset with storage ut:macro Bossbar
 
 scoreboard players operation #play_bossbar store = #max_bossbar store
@@ -33,6 +37,7 @@ bossbar set p0_line3 players @a[tag=bossbar_respawn]
 tag @a remove bossbar_spectate
 tag @a remove bossbar_respawn
 #
+
 
 bossbar set p0_line1 players @a[scores={bid=..0}]
 

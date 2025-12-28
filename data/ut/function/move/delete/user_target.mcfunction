@@ -9,8 +9,8 @@ function ut:player/dt/lose
 tag @s add dt_ready
 
 #position lock
-attribute @s generic.knockback_resistance modifier add deletekbr 1.0 add_value
-# attribute @s generic.gravity modifier add deletefloat -0.08 add_value
+attribute @s knockback_resistance modifier add deletekbr 1.0 add_value
+# attribute @s gravity modifier add deletefloat -0.08 add_value
 effect clear @s levitation
 effect give @s levitation infinite 0 true
 function ut:move/effect/nojump/give

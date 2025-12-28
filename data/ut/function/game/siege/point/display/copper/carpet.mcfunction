@@ -1,6 +1,6 @@
 #By Nebulirion
 
-execute unless block ~ ~ ~ #minecraft:carpets run clone ~ ~ ~ ~ ~ ~ ~ 1 ~ 
+execute unless block ~ ~ ~ #minecraft:carpets run clone ~ ~ ~ ~ ~ ~ ~ 1 ~
 
 setblock ~ ~ ~ light_gray_carpet
 

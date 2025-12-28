@@ -6,6 +6,8 @@ execute at @s run function ut:move/dodge/trigger/1
 scoreboard players set #check hitcheck 0
 tag @s remove counter
 
+execute at @s run function ut:move/dodge/passive/use
+
 function ut:move/passive/sans/clear
 scoreboard players set @s passive_timer 30
 

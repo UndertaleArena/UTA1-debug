@@ -6,4 +6,6 @@
 execute if score @s impaled_level matches 4.. run function ut:move/effect/impaled/loop_nojump
 #
 scoreboard players remove @s impaled_timer 1
-execute unless score @s impaled_timer matches 1.. run function ut:move/effect/impaled/clear
+execute unless score @s impaled_timer matches 1.. if score @s impaled_level matches 2.. run function ut:move/effect/impaled/drop
+execute unless score @s impaled_timer matches 1.. if score @s impaled_level matches ..1 run function ut:move/effect/impaled/clear
+#execute if score @s impaled_level matches 8.. run scoreboard players set @s impaled_level 7

@@ -2,6 +2,7 @@
 ###START
 scoreboard players operation #atker sid = @s sid
 execute as @a[tag=playing] if score @s pid = #atker sid run tag @s add sticking_p
+tag @s add no_passive
 ###XZPOS
 execute at @a[tag=sticking_p,limit=1] run tp @s ~ ~ ~
 execute unless entity @a[tag=sticking_p] run function ut:void
@@ -14,3 +15,4 @@ scoreboard players remove @s life 1
 execute unless score @s life matches 1.. run function ut:move/spear/stick_end
 ###END
 tag @a[tag=sticking_p] remove sticking_p
+tag @s remove no_passive

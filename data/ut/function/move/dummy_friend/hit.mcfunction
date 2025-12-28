@@ -2,7 +2,7 @@
 #06/12/2024, 16:37:49
 
 ###EXTRA
-data merge entity @e[tag=atker,limit=1] {CustomName:'{"translate":"chr.maddummy.chn1"}'}
+data merge entity @e[tag=atker,limit=1] {CustomName:{"translate":"chr.maddummy.chn1"}}
 playsound minecraft:entity.zombie.attack_wooden_door player @a ~ ~ ~ 0.6 2
 scoreboard players operation #target pid = @s pid
 execute as @e[tag=atker,limit=1] run function ut:move/hit_list/register

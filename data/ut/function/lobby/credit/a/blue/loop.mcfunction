@@ -5,7 +5,6 @@
 scoreboard players add @s credit 1
 
 execute as @e[tag=cmove,tag=bluebone] at @s run function ut:lobby/credit/a/blue/bluebone/loop
-execute as @a[tag=credit_p] at @s run function ut:player/movetest
 
 execute if score @s credit matches ..0 run function ut:lobby/credit/a/sy/l_a0
 execute if score @s credit matches 1..40 run function ut:lobby/credit/a/blue/l_a1

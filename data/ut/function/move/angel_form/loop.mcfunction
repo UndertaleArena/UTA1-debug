@@ -4,7 +4,7 @@ execute if entity @s[tag=!launched] run playsound minecraft:entity.evoker.prepar
 tag @s add launched
 #
 execute if score @s life matches 2 run item replace entity @s armor.head with feather
-execute if score @s life matches 2 run item replace entity @s[tag=wing_mirror] armor.head with feather[custom_model_data=1]
+execute if score @s life matches 2 run item replace entity @s[tag=wing_mirror] armor.head with feather[custom_model_data={floats:[1]}]
 
 #
 execute if score @s life matches ..9 run scoreboard players remove @s rot 87000

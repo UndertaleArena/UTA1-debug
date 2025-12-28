@@ -1,7 +1,7 @@
 #Original By Nebulirion, edited by SY
 
 #summon
-summon minecraft:marker ~ ~ ~ {Tags:[summon,delete_target,move,spc],CustomName:'"DTarget"'}
+summon minecraft:marker ~ ~ ~ {Tags:[summon,delete_target,move,spc],CustomName:"DTarget"}
 
 #setting
 scoreboard players set #this damage 0

@@ -8,9 +8,9 @@ scoreboard players set max random 205
 
 item replace entity 0-0-0-0-1 container.0 with mycelium
 item modify entity 0-0-0-0-1 container.0 ut:random
-execute store result score dog info run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score dog info run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers"[0].amount
 
-execute if score dog info matches 49 run scoreboard players set dog info 301
+# execute if score dog info matches 49 run scoreboard players set dog info 301
 
 execute if score dog info matches 152..202 run scoreboard players remove dog info 202
 execute if score dog info matches -50..133 run function ut:lobby/dog/1

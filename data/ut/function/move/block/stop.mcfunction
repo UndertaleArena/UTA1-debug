@@ -2,8 +2,8 @@
 
 effect give @s minecraft:jump_boost infinite 0 true
 
-attribute @s generic.movement_speed modifier remove blockslow
-attribute @s generic.knockback_resistance modifier remove blockkbr
+attribute @s movement_speed modifier remove blockslow
+attribute @s knockback_resistance modifier remove blockkbr
 
 scoreboard players reset @s plt2
 scoreboard players reset @s cdcooldown

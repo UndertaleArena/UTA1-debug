@@ -1,8 +1,7 @@
 #By Nebulirion
 
 ###START
-scoreboard players set -replacedata store 1
-function ut:stats/get_player_data
+function ut:stats/player_data/take
 scoreboard players operation -og chr = @s chr
 
 ###Record Game Stats
@@ -76,6 +75,7 @@ function ut:stats/update_recipes
 function ut:stats/update_advancements
 
 ###END
+# tellraw @s[name=SY91419] ["Debug: Player Stats after calculate:\n",{"storage":"utstats:main",nbt:"LoadedPlayer"}]
 data modify storage utstats:main Data prepend from storage utstats:main LoadedPlayer
 scoreboard players operation @s chr = -og chr
 

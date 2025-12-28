@@ -3,7 +3,7 @@
 scoreboard players add #rot2 store 40
 scoreboard players operation #rot store = #rot2 store
 execute positioned ^ ^-.3 ^ run function ut:move/rot/12
-data merge entity @e[tag=summon,limit=1] {Tags:[king_shockwave,prj,prj_sp,summon,move],NoGravity:1b,Marker:1b,Fire:32767s,CustomName:'{"translate":"chr.asgore.dtn"}'}
+data merge entity @e[tag=summon,limit=1] {Tags:[king_shockwave,prj,prj_sp,summon,move],NoGravity:1b,Marker:1b,Fire:32767s,CustomName:{"translate":"chr.asgore.dtn"}}
 
 scoreboard players set #this damage 0
 scoreboard players set #this lifetime 6

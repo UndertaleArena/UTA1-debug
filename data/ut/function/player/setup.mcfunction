@@ -18,6 +18,7 @@ scoreboard players set @s unloadtime_2nd 0
 scoreboard players set @s mpcooldown 0
 scoreboard players set @s cdcooldown 0
 scoreboard players set @s passive_timer 0
+scoreboard players set @s shield 0
 #
 scoreboard players set @s filter_l 0
 scoreboard players set @s filter_r 0

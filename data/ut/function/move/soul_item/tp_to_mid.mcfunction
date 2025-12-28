@@ -2,9 +2,9 @@
 
 kill @s[tag=not_really_a_soul_item]
 
-playsound entity.shulker.teleport player @a 
+playsound entity.shulker.teleport player @a
 tp @s @e[tag=arena_sp,limit=1,scores={maplock=1}]
-execute at @s run playsound entity.shulker.teleport player @a 
+execute at @s run playsound entity.shulker.teleport player @a
 
 execute at @s run function ut:move/delete/platform
 

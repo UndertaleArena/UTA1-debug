@@ -16,4 +16,6 @@ execute unless items entity @s inventory.14 carrot_on_a_stick[custom_data~{ischr
 execute unless items entity @s inventory.15 carrot_on_a_stick[custom_data~{ischrswitch:1b}] run scoreboard players set #switching chr 14
 execute unless items entity @s inventory.16 carrot_on_a_stick[custom_data~{ischrswitch:1b}] run scoreboard players set #switching chr 15
 
+execute unless items entity @s[advancements={ut:chr/mettatonex/lv5=true}] inventory.24 carrot_on_a_stick[custom_data~{ischrswitch:1b}] run scoreboard players set #switching chr 16
+
 execute if score #switching chr matches 1.. run function ut:system/chrswitch/switch_check

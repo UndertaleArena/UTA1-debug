@@ -25,7 +25,7 @@ execute store result storage ut:temp PosTarget[0] double 1 run scoreboard player
 execute store result storage ut:temp PosTarget[1] double 1 run scoreboard players get #resiDis y_pos
 execute store result storage ut:temp PosTarget[2] double 1 run scoreboard players get #resiDis z_pos
 data modify entity @s Pos set from storage ut:temp PosTarget
-## we're going to dance
+## were going to dance
 tellraw @a[tag=debug.delete_residu] ["[",{"selector":"@s"},"] Og Pos: ",{"nbt":"PosOrigin","storage":"ut:temp"}]
 tellraw @a[tag=debug.delete_residu] ["[",{"selector":"@s"},"] New Pos: ",{"nbt":"Pos","entity":"@s"}]
 execute at @s if block ~ ~ ~ infested_chiseled_stone_bricks run function ut:move/delete/residu/cleaner

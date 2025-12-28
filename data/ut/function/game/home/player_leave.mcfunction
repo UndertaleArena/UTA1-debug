@@ -1,5 +1,5 @@
 #By Nebulirion
 
-execute if score -GameMode game matches 5..7 run function ut:system/chrswitch/inventory_clear
+execute if score -GameMode game matches 4..7 run function ut:system/chrswitch/inventory_clear
 
 tag @s remove wasathome

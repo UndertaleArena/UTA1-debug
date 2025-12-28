@@ -33,6 +33,6 @@ scoreboard players set max random 54
 
 item replace entity 0-0-0-0-1 container.0 with bread
 item modify entity 0-0-0-0-1 container.0 ut:random
-execute store result score @s dogaic run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score @s dogaic run data get entity 0-0-0-0-1 Item.components."minecraft:attribute_modifiers"[0].amount
 
 execute at @s if block ~ ~-1 ~ #ut:dog_trans run function ut:move/dog/ai/t5/v0/start

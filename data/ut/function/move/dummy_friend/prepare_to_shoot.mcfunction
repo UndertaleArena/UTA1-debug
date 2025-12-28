@@ -3,7 +3,7 @@
 
 function ut:move/dummy_friend/_sys/cast_delayed
 
-data modify entity @s[tag=dummy_friend] ArmorItems[3].components."minecraft:custom_model_data" set value 0
+data modify entity @s[tag=dummy_friend] equipment.head.components."minecraft:custom_model_data".floats[0] set value 0
 
 execute if entity @s[tag=dummy_friend] run scoreboard players add #gain mp 20
 

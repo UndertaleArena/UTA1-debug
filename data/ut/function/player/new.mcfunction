@@ -5,6 +5,8 @@ function ut:system/pid/give
 tp @s 161 221.50 1280 90 -5
 
 scoreboard players set @s rejoin 1
+scoreboard players set @s Q 3
+scoreboard players set @s UI 0
 
 #advancement revoke @s everything
 #recipe take @s *

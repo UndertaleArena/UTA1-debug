@@ -8,6 +8,7 @@ function ut:player/will/lose
 scoreboard players set #gain dt 400
 scoreboard players set #gain will 400
 scoreboard players set #damage damage 0
+scoreboard players set #wdmg ptsd_wdmg 20
 #
 function ut:move/hit/main
 #

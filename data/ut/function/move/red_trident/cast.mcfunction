@@ -7,7 +7,7 @@ function ut:move/fire_bullet
 playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.4 0.6
 ###SUMMON ENTITY
 execute positioned ^-0.5 ^-0.2 ^0.5 positioned ~-0.0 ~-0.93 ~-0.0 run function ut:move/rot/12husk
-data merge entity @e[tag=summon,limit=1] {Tags:[red_trident,blockable,reflectable,cutable,killonhit,motion_prj,prj2,move,summon],NoGravity:1b,Silent:1b,NoAI:1b,Team:"nocol",IsBaby:1b,ArmorItems:[{},{},{},{id:"minecraft:cooked_mutton",count:1b}]}
+data merge entity @e[tag=summon,limit=1] {Tags:[red_trident,blockable,reflectable,cutable,killonhit,motion_prj,prj2,move,summon],NoGravity:1b,Silent:1b,NoAI:1b,Team:"nocol",IsBaby:1b,equipment:{head:{id:"minecraft:cooked_mutton",count:1b}}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s prj_speed
 scoreboard players operation #player damage = @s atk

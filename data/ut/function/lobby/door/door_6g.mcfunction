@@ -1,6 +1,6 @@
 #By Neb or someone else bc i have no idea
 
-data merge entity @s {CustomName:'{"translate":"las.ft.door","with":["6"]}'}
+data merge entity @s {CustomName:{"translate":"las.ft.door","with":["6"]}}
 
 scoreboard players set #open store 1
 

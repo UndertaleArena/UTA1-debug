@@ -15,3 +15,6 @@ execute unless score -GameMode game matches 7 if score @s in_pregame matches 1 r
 #
 execute if score -GameMode game matches 7 unless score #preGame game matches 1 if score @s tbid matches 2 if score @s in_pregame matches 1 run function ut:game/pre_game_p_end
 execute if score -GameMode game matches 7 unless score #preGameSiege game matches 1 if score @s tbid matches 1 if score @s in_pregame matches 1 run function ut:game/pre_game_p_end
+
+# Switch Side
+execute if score -GameMode game matches 7 if score G_SwitchSide gamerulemode matches 1 if score #round game matches 2 if score @s tid = -SiegeDefend tid run function ut:move/effect/finalrush/clear

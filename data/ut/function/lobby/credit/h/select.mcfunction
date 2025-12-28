@@ -7,7 +7,7 @@ scoreboard players set @s unloadtime 8
 
 execute as @a[tag=ray_user] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 0.8 1.75
 
-#####EGG: IT'S YOU!
+#####EGG: ITS YOU!
 scoreboard players set #itsyou store 0
 execute store result score #su0 store run data get entity @s UUID[0]
 execute store result score #su1 store run data get entity @s UUID[1]
@@ -24,7 +24,7 @@ execute if score #itsyou store matches 1 run advancement grant @s only ut:other/
 #####display name
 data modify storage hp Skull.temp set value []
 data modify storage hp Skull.temp append from block ~ ~ ~ profile.name
-execute if block ~ ~-1 ~ birch_fence run data modify storage hp Skull.temp set value '"Mushroom Dance"'
+execute if block ~ ~-1 ~ birch_fence run data modify storage hp Skull.temp set value "Mushroom Dance"
 execute if score #itsyou store matches 0 run tellraw @s {"storage": "hp","nbt": "Skull.temp", "interpret": true, "color": "gold", "bold": true}
 #####
 execute if score #itsyou store matches 1 unless score @s gamesfinished matches 100.. run tellraw @s {"translate":"cre.you", "color": "gold", "bold": true}

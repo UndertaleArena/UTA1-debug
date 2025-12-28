@@ -26,7 +26,7 @@ scoreboard players set -IsDogExist dog_timer 0
 scoreboard players set -IsDogCap dog_timer 0
 scoreboard players set -IsDogCapBomb dog_timer 0
 scoreboard players set -IsDogCapTeam dog_timer 0
-data modify storage soul DogBack set value '{"text": "\\uF819\\uF818\\uF814"}'
+data modify storage soul DogBack set value {"text": "\uF819\uF818\uF814"}
 
 #####Countdown
 scoreboard players set #preGame game 1

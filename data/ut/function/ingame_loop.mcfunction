@@ -1,6 +1,7 @@
 #By Nebulirion
 #
 #execute as @e[tag=papyrus] at @s run function ut:special/papyrus_loop
+
 #ply
 execute as @a at @s run function ut:player/main_ingame
 #move

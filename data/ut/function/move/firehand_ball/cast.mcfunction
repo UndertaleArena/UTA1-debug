@@ -4,7 +4,7 @@
 ###USER SCORE
 function ut:move/fire_bullet
 ###SUMMON ENTITY
-summon minecraft:armor_stand ^0.0 ^0.0 ^0.0 {Tags:[firehand_ball,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:magma_cream",count:1b,components:{custom_model_data:1}}],CustomName:'{"translate":"chr.asgore.mpn2"}'}
+summon minecraft:armor_stand ^0.0 ^0.0 ^0.0 {Tags:[firehand_ball,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,equipment:{head:{id:"minecraft:magma_cream",count:1b,components:{custom_model_data:{floats:[1]}}}},CustomName:{"translate":"chr.asgore.mpn2"}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s speed
 scoreboard players operation #player prj_speed *= 40 const

@@ -1,4 +1,4 @@
-#By Nebulirion while in class (im paying attention so don't judge me ok)
+#By Nebulirion while in class (im paying attention so dont judge me ok)
 
 execute unless score @s frog_talk matches 20..25 run scoreboard players set @s frog_talk 19
 scoreboard players add @s frog_talk 1

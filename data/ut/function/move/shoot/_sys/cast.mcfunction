@@ -22,4 +22,4 @@ tp @s ~ ~ ~ ~ ~
 tag @s remove summon
 ###EXTRA
 item modify entity @s armor.head ut:hand_model
-execute store result entity @s ArmorItems[3].components."minecraft:custom_model_data" int 1 run data get entity @s ArmorItems[3].count
+execute store result entity @s equipment.head.components."minecraft:custom_model_data".floats[0] int 1 run data get entity @s equipment.head.count

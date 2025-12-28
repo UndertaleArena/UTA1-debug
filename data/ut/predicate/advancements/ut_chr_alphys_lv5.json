@@ -3,11 +3,11 @@
     "entity": "this",
     "predicate":
     {
-      "player":
-      {
-          "advancements": {
+    "type_specific":{
+        "type": "player",
+        "advancements": {
               "ut:chr/alphys/lv5": true
           }
-      }
+        }
     }
 }

@@ -11,7 +11,7 @@ scoreboard players operation motion store = #new plt3b
 scoreboard players operation motion store -= @s plt3b
 scoreboard players operation @s plt3b = #new plt3b
 
-#execute if score @s plt3 matches 6 run attribute @s generic.knockback_resistance modifier add angelkbr 1.0 add_value
+#execute if score @s plt3 matches 6 run attribute @s knockback_resistance modifier add angelkbr 1.0 add_value
 
 #execute if score @s plt3 matches 2 run effect clear @s levitation
 #execute if score @s plt3 matches 2 run effect give @s levitation 1 5 true
@@ -28,8 +28,8 @@ execute if score @s plt3 matches 7 run effect give @s levitation 2 0 true
 #execute if score @s plt3 matches 20 run function ut:move/angel_form/gravity2
 
 #execute if score @s plt3 matches 6 run effect clear @s levitation
-#execute if score @s plt3 matches 6 run attribute @s generic.gravity modifier remove angelgrav
-#execute if score @s plt3 matches 6 run attribute @s generic.gravity modifier add angelgrav -0.08 add_value
+#execute if score @s plt3 matches 6 run attribute @s gravity modifier remove angelgrav
+#execute if score @s plt3 matches 6 run attribute @s gravity modifier add angelgrav -0.08 add_value
 
 #
 #function ut:move/effect/nojump/give

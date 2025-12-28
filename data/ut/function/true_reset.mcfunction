@@ -25,6 +25,7 @@ scoreboard players set allow_roomF info 1
 scoreboard players set allow_roomD info 1
 scoreboard players set allow_roomM info 1
 scoreboard players set allow_roomP info 1
+scoreboard players set -pap_dtmax info 2
 scoreboard players set admin_mode info 0
 scoreboard players set hq_parkour info 1
 scoreboard players set TeamLimit info 8

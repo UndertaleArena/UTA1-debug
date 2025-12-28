@@ -6,3 +6,6 @@ execute if data entity @s Inventory[{components:{"minecraft:custom_data":{real_k
 execute if data entity @s Inventory[{components:{"minecraft:custom_data":{stick:1b}}}] run function ut:move/stick/buff
 execute if data entity @s Inventory[{components:{"minecraft:custom_data":{lazer_ex:1b}}}] run function ut:move/lazer_ex/buff
 execute if data entity @s Inventory[{components:{"minecraft:custom_data":{passive:"default"}}}] run function ut:move/hand/cast/buff
+
+execute if score @s[tag=lazer_user] plt1 matches 1.. run function ut:move/lazer/stop_lite
+execute if score @s[tag=lazer_user] plt1 matches 1.. run function ut:move/lazer/use

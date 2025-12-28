@@ -4,7 +4,7 @@
 ###USER SCORE
 function ut:move/fire_bullet
 ###SUMMON ENTITY
-summon minecraft:armor_stand ^0.0 ^-0.2 ^0.0 {Tags:[flirt,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{id:"minecraft:slime_ball",count:1b,components:{"minecraft:custom_data":{hit_list:[]}}},{}],CustomName:'{"translate":"chr.frisk.chn"}'}
+summon minecraft:armor_stand ^0.0 ^-0.2 ^0.0 {Tags:[flirt,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,equipment:{chest:{id:"minecraft:slime_ball",count:1b,components:{"minecraft:custom_data":{hit_list:[]}}}},CustomName:{"translate":"chr.frisk.chn"}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s prj_speed
 scoreboard players operation #player damage = @s atk

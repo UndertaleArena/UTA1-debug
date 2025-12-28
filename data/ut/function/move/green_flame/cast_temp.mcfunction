@@ -1,7 +1,7 @@
 #By Nebulirion
 
 #check on this
-summon minecraft:marker ^ ^ ^ {Tags:[summon,summon_gf,move,green_flame_bullet,green_flame_temp,prj_sp,green_flame_kill],CustomName:'"Temp"'}
+summon minecraft:marker ^ ^ ^ {Tags:[summon,summon_gf,move,green_flame_bullet,green_flame_temp,prj_sp,green_flame_kill],CustomName:"Temp"}
 
 scoreboard players set #this damage 0
 scoreboard players set #this lifetime 40

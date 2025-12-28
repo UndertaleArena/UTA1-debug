@@ -1,5 +1,6 @@
 $bossbar set p$(Current)_hp players @a[scores={bid=$(Current)}]
 $bossbar set p$(Current)_dt players @a[scores={bid=$(Current)}]
+$bossbar set p$(Current)_dt_passive players @a[scores={bid=$(Current)},tag=passive_papyrus]
 
 scoreboard players remove #play_bossbar store 1
 execute store result storage ut:macro Bossbar.Current int 1 run scoreboard players get #play_bossbar store

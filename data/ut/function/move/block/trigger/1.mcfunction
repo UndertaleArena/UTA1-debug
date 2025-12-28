@@ -1,6 +1,7 @@
 #By Nebulirion
 
 tag @s add block_player
+#Rxd = Rx2(Blocker) - Rx1(Atker), check if range in 100 ~ 260
 
 ###
 execute as @e[tag=atker,limit=1] store result score rx1 store run data get entity @s Rotation[0]
@@ -17,13 +18,15 @@ execute if score rxd store matches 360.. run scoreboard players remove rxd store
 
 tag @s add block_fail
 execute if score rxd store matches 100..260 run tag @s remove block_fail
-
+# execute if entity @e[tag=atker,tag=decoration_prj] run tag @s add block_ignore
 execute if entity @e[tag=atker,tag=!blockable] run tag @s add block_fail
 
+# spli
 execute if entity @s[tag=block_fail] run function ut:move/counter/fail
-execute unless entity @s[tag=block_fail] run function ut:move/block/trigger/2
+execute if entity @s[tag=!block_fail] run function ut:move/block/trigger/2
 
 tag @s remove block_fail
+# tag @s remove block_ignore
 ###
 
 tag @s remove block_player

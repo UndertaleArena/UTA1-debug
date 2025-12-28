@@ -23,4 +23,5 @@ execute if entity @s[tag=set_gre3] as @a[tag=ray_user] run function ut:lobby/gam
 execute if entity @s[tag=set_grf1] as @a[tag=ray_user] run function ut:lobby/gamerule/f/dog
 execute if entity @s[tag=set_grf2] as @a[tag=ray_user] run function ut:lobby/gamerule/f/goal
 execute if entity @s[tag=set_grf3] as @a[tag=ray_user] run function ut:lobby/gamerule/f/bonus
+execute if entity @s[tag=set_grg2] as @a[tag=ray_user] run function ut:lobby/gamerule/g/switch_side
 execute if entity @s[tag=set_grg3] as @a[tag=ray_user] run function ut:lobby/gamerule/g/bonus

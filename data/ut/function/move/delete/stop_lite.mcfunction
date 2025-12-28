@@ -11,13 +11,13 @@ execute as @e[tag=delete] if score @s pid = #user pid run function ut:void
 execute as @e[tag=hand] if score @s pid = #user pid run function ut:move/hand/state_restore
 
 #effect
-attribute @s generic.knockback_resistance modifier remove deletekbr
-# attribute @s generic.gravity modifier remove deletefloat
+attribute @s knockback_resistance modifier remove deletekbr
+# attribute @s gravity modifier remove deletefloat
 effect clear @s levitation
 tp @s @s
 
 #dt reset
-function ut:player/dt/reset
+
 
 #tag reset
 tag @s remove delete_rc

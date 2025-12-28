@@ -4,7 +4,7 @@ tag @s remove credit_tbcas
 
 execute if entity @s[nbt={Small:1b}] run summon armor_stand ~ ~-149 ~ {Tags:[summon,credit_as,stationed,creator_as],NoGravity:1b,ShowArms:1b,Rotation:[-90.0f,0.0f],Small:1b,DisabledSlots:3620671}
 execute unless entity @s[nbt={Small:1b}] run summon armor_stand ~ ~-149 ~ {Tags:[summon,credit_as,stationed,creator_as],NoGravity:1b,ShowArms:1b,Rotation:[-90.0f,0.0f],DisabledSlots:3620671}
-data modify entity @e[tag=summon,limit=1] ArmorItems set from entity @s ArmorItems
+data modify entity @e[tag=summon,limit=1] equipment set from entity @s equipment
 data modify entity @e[tag=summon,limit=1] CustomName set from entity @s CustomName
 #data modify entity @e[tag=summon,limit=1] Tags append from entity @s Tags
 

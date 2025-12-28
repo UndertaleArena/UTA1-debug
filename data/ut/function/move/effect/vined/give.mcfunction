@@ -5,4 +5,4 @@ tag @s add effect_vined
 
 scoreboard players set @s vined_timer 6
 
-attribute @s generic.movement_speed modifier add vined_slow -0.5 add_multiplied_total
+attribute @s movement_speed modifier add vined_slow -0.5 add_multiplied_total

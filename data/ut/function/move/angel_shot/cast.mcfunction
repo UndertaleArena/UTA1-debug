@@ -7,7 +7,7 @@ function ut:move/fire_bullet
 playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 0.25 1.2
 ###SUMMON ENTITY
 execute positioned ^0.0 ^0.0 ^0.0 positioned ~-0.0 ~-0.93 ~-0.0 run function ut:move/rot/12husk
-data merge entity @e[tag=summon,limit=1] {Tags:[angel_shot,blockable,reflectable,cutable,killonhit,prj2,move,summon],NoGravity:1b,Silent:1b,NoAI:1b,Team:"nocol",IsBaby:1b,ArmorItems:[{},{},{},{id:"minecraft:magenta_dye",count:1b}]}
+data merge entity @e[tag=summon,limit=1] {Tags:[angel_shot,blockable,reflectable,cutable,killonhit,prj2,move,summon],NoGravity:1b,Silent:1b,NoAI:1b,Team:"nocol",IsBaby:1b,equipment:{head:{id:"minecraft:magenta_dye",count:1b}}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s prj_speed
 scoreboard players operation #player damage = @s atk

@@ -1,4 +1,4 @@
-#By Neb but it's actually SY and he's messageing Ds??? wtf is happening
+#By Neb but its actually SY and hes messageing Ds??? wtf is happening
 
 setblock 284 146 1286 air
 setblock 280 146 1286 air
@@ -63,7 +63,7 @@ setblock 280 141 1289 minecraft:polished_blackstone_bricks
 
 setblock 278 143 1280 minecraft:light[level=7,waterlogged=false]
 setblock 278 142 1280 minecraft:lever[face=floor,facing=north,powered=false]
-setblock 278 141 1280 minecraft:command_block[conditional=false,facing=up]{Command:"function ut:lobby/staff/load",CustomName:'{"text":"@"}',SuccessCount:0,TrackOutput:1b,UpdateLastExecution:1b,auto:0b,conditionMet:0b,powered:0b}
+setblock 278 141 1280 minecraft:command_block[conditional=false,facing=up]{Command:"function ut:lobby/staff/load",CustomName:{"text":"@"},SuccessCount:0,TrackOutput:1b,UpdateLastExecution:1b,auto:0b,conditionMet:0b,powered:0b}
 
 setblock 268 143 1297 air
 
@@ -140,5 +140,5 @@ setblock 251 142 1274 air
 #extra message
 #current(1.2g 272.5 153 1280.5)
 #==========
-execute at @e[tag=lobby_center] run data modify block ~-24 ~-11 ~8 front_text.messages[1] set value '{"text":""}'
+execute at @e[tag=lobby_center] run data modify block ~-24 ~-11 ~8 front_text.messages[1] set value {"text":""}
 #==========

@@ -4,7 +4,7 @@
 ###EXTRA
 playsound minecraft:entity.skeleton.shoot player @a ~ ~ ~ 2 1
 ###SUMMON ENTITY
-summon minecraft:armor_stand ^0.0 ^-0.4 ^0.3 {Tags:[mngd_as,bone,killonhit,mini_move,summon],NoGravity:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:bone",count:1b}],CustomName:'{"translate":"chr.papyrus.mpn"}'}
+summon minecraft:armor_stand ^0.0 ^-0.4 ^0.3 {Tags:[mngd_as,bone,killonhit,mini_move,summon],NoGravity:1b,Invisible:1b,Marker:1b,equipment:{head:{id:"minecraft:bone",count:1b}},CustomName:{"translate":"chr.papyrus.mpn"}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s prj_speed
 scoreboard players operation #player damage = @s atk

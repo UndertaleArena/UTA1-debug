@@ -6,7 +6,7 @@ team leave @s
 scoreboard players operation #this tid = @s tid
 
 ###Prepare Item
-item replace entity 0-0-0-0-1 container.0 with carrot_on_a_stick[custom_data={soul:1b,canned:0b,nonboss:0b,can_fist:1b,loot_soul:1b},attribute_modifiers={modifiers:[], show_in_tooltip:false},custom_name='{"text":"","color":"white","italic":false,"bold":true,"extra":[{"translate":"itm.bosssoul","with":[{"translate":"tem.0"}]}]}'] 1
+item replace entity 0-0-0-0-1 container.0 with carrot_on_a_stick[custom_data={soul:1b,canned:0b,nonboss:0b,can_fist:1b,loot_soul:1b},attribute_modifiers=[],tooltip_display={hidden_components:["attribute_modifiers"]},custom_name={"text":"","color":"white","italic":false,"bold":true,"extra":[{"translate":"itm.bosssoul","with":[{"translate":"tem.0"}]}]}] 1
 
 ###Modify Model
 scoreboard players operation #soul tid = @s tid
@@ -18,7 +18,7 @@ scoreboard players add #cmd tid 1000
 execute if score -fallen soul matches 1 run data modify entity 0-0-0-0-1 Item.components."minecraft:custom_data".fallen set value 1b
 execute if score killBonus gamerule matches 3 run data modify entity 0-0-0-0-1 Item.components."minecraft:custom_data".nonboss set value 1b
 #execute if score soulType gamerule matches 1 run scoreboard players add #cmd tid 10
-execute store result entity 0-0-0-0-1 Item.components."minecraft:custom_model_data" int 1 run scoreboard players get #cmd tid
+execute store result entity 0-0-0-0-1 Item.components."minecraft:custom_model_data".floats[] int 1 run scoreboard players get #cmd tid
 
 ###Modify Killer Info
 execute if entity @a[tag=soul_deader] run item modify entity 0-0-0-0-1 container.0 ut:soul_lore

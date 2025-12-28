@@ -7,7 +7,7 @@ scoreboard players set #cbmodel plt1 249
 item replace block 255 0 255 container.0 with carrot_on_a_stick
 data modify block 255 0 255 Items[0].components set from entity @s Inventory[{components:{"minecraft:custom_data":{chaos_buster:1b}}}].components
 
-execute store result block 255 0 255 Items[0].components."minecraft:custom_model_data" int 1 run scoreboard players get #cbmodel plt1
+execute store result block 255 0 255 Items[0].components."minecraft:custom_model_data".floats[0] int 1 run scoreboard players get #cbmodel plt1
 execute store result block 255 0 255 Items[0].components."minecraft:custom_data".cb_charge int 1 run scoreboard players get #cb plt1
 
 execute store result score clear store run clear @s carrot_on_a_stick[custom_data~{chaos_buster:1b}]

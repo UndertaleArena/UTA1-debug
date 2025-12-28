@@ -5,4 +5,4 @@ execute if entity @s[tag=trident_orange] run particle block{block_state:orange_c
 
 function ut:move/hit_list/register
 
-data merge entity @s {CustomName:'{"translate":"chr.asgore.chn"}'}
+data merge entity @s {CustomName:{"translate":"chr.asgore.chn"}}

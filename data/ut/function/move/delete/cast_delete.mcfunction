@@ -27,7 +27,7 @@ scoreboard players reset @s y_pos
 
 #data setting
 data modify entity @s Pos set from entity @s data.Target
-data modify entity @s CustomName set value '"DStore"'
+data modify entity @s CustomName set value "DStore"
 
 tellraw @a[tag=debug] ["",{"selector":"@s"}," succeed, Code: ",{"score":{"name":"@s","objective":"aid"}}]
 

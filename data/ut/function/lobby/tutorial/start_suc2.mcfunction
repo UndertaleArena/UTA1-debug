@@ -14,6 +14,7 @@ execute at @e[tag=ray_flowey] run kill @e[tag=move,distance=..24]
 scoreboard players reset @s plt1
 scoreboard players reset @s plt2
 scoreboard players reset @s plt3
+scoreboard players reset @s plt4
 scoreboard players set tut_state info 1
 
 scoreboard players set flowey tutorial 1

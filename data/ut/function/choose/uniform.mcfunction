@@ -5,12 +5,15 @@ function ut:system/team/color
 
 item replace block 255 0 255 container.0 from entity @s armor.legs
 data modify block 255 0 255 Items[0].id set value "minecraft:leather_leggings"
-execute store result block 255 0 255 Items[0].components."minecraft:dyed_color".rgb int 1 run scoreboard players get -color store
+execute store result block 255 0 255 Items[0].components."minecraft:dyed_color" int 1 run scoreboard players get -color store
 item replace entity @s armor.legs from block 255 0 255 container.0
 
 item replace block 255 0 255 container.0 from entity @s armor.chest
 data modify block 255 0 255 Items[0].id set value "minecraft:leather_chestplate"
-execute store result block 255 0 255 Items[0].components."minecraft:dyed_color".rgb int 1 run scoreboard players get -color store
+execute store result block 255 0 255 Items[0].components."minecraft:dyed_color" int 1 run scoreboard players get -color store
 item replace entity @s armor.chest from block 255 0 255 container.0
 
-playsound item.armor.equip_leather player @s ~ ~ ~ 2 1 
+playsound item.armor.equip_leather player @s ~ ~ ~ 2 1
+
+# changelog
+## -> dyed_color component has been changed to integer storage instead of extra rgb tag

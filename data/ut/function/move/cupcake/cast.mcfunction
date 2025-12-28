@@ -3,7 +3,7 @@
 playsound minecraft:entity.phantom.ambient player @a ~ ~ ~ 2 1.3
 particle cloud ~ ~1 ~ 0.3 0.3 0.3 0.3 100 force @a[scores={Q=1..}]
 
-summon minecraft:armor_stand ~ ~ ~ {Tags:[novapordeath,move,cupcake,prj,prj_sp,summon],Small:0b,NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,Fire:32676,ArmorItems:[{},{},{},{id:"minecraft:fermented_spider_eye",count:1b,components:{custom_model_data:6}}],Pose:{Head:[0f,0f,0f]},CustomName:'{"translate":"chr.muffet.dtn"}',Silent:1b}
+summon minecraft:armor_stand ~ ~ ~ {Tags:[novapordeath,move,cupcake,prj,prj_sp,summon],Small:0b,NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,Fire:32676,equipment:{head:{id:"minecraft:fermented_spider_eye",count:1b,components:{custom_model_data:{floats:[6]}}}},Pose:{Head:[0f,0f,0f]},CustomName:{"translate":"chr.muffet.dtn"},Silent:1b}
 
 scoreboard players operation @e[tag=summon,limit=1] IQ = @s IQ
 scoreboard players set #this damage 15 

@@ -18,11 +18,14 @@ scoreboard players add t y_pos 1
 ##range change
 execute store result entity @s data.storange int 1 run scoreboard players get t y_pos
 
-#vine detection
+#structuren't block copy
+## Restore Position and state
 execute store result entity @s Pos[1] double 0.01 run scoreboard players get #min y_pos
 scoreboard players set @s ray_distance 0
+## Start Looping
 execute at @s run function ut:move/delete/vine_replace_loop
 
+# DEBUG: range of y store
 tellraw @a[tag=detail,tag=debug] ["Storage Range: ",{"score":{"name":"t","objective":"y_pos"}}]
 
 #do copy

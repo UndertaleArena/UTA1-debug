@@ -1,10 +1,12 @@
 #By Nebulirion
 
 execute if score -Enabled stat matches 1 run scoreboard players add @s st_cdtuse 1
+execute if score -Enabled stat matches 1 run scoreboard players add @s ptsd_dtuse 1
 playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1.2 1.2
 
-scoreboard players set #reset dt 1
-scoreboard players set @s unloadtime 20
+execute if entity @s[tag=!passive_papyrus] run scoreboard players set #reset dt 1
+execute if entity @s[tag=passive_papyrus] run scoreboard players operation @s dt -= @s dthalf
+scoreboard players set @s unloadtime 10
 function ut:player/infight/use
 
 execute anchored eyes positioned ^ ^ ^.5 run function ut:move/green_flame/cast_pilot

@@ -1,3 +1,3 @@
 #By Nebulirion
 ##
-$attribute @s generic.gravity modifier add angelgrav $(grav) add_value
+$attribute @s gravity modifier add angelgrav $(grav) add_value

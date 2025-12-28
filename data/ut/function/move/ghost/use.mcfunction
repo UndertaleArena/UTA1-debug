@@ -4,8 +4,8 @@ scoreboard players set @s unloadtime 60
 scoreboard players set @s cdcooldown 60
 #function ut:player/infight/use
 
-attribute @s generic.knockback_resistance modifier add ghostkbr 1.0 add_value
-attribute @s generic.movement_speed modifier add ghostspeed 0.5 add_multiplied_total
+attribute @s knockback_resistance modifier add ghostkbr 1.0 add_value
+attribute @s movement_speed modifier add ghostspeed 0.5 add_multiplied_total
 
 particle minecraft:cloud ~ ~1.2 ~ 0.25 0.5 0.25 0.02 40 force @a[scores={Q=1..}]
 
@@ -34,7 +34,7 @@ scoreboard players operation #user pid = @s pid
 execute as @e[tag=stick] if score @s sid = #user pid run function ut:void
 
 function ut:move/rot/12
-data merge entity @e[tag=summon,limit=1] {Tags:[ghost_model,summon,hit],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:nautilus_shell",count:1b}],Pose:{Head:[0f,0f,0f]},CustomName:'"Napstablook"'}
+data merge entity @e[tag=summon,limit=1] {Tags:[ghost_model,summon,hit],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,equipment:{head:{id:"minecraft:nautilus_shell",count:1b}},Pose:{Head:[0f,0f,0f]},CustomName:"Napstablook"}
 
 scoreboard players operation @e[tag=summon,limit=1] sid = @s pid
 scoreboard players operation @e[tag=summon,limit=1] tid = @s tid

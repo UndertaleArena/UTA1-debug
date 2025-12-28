@@ -13,5 +13,6 @@ execute as @e[type=armor_stand,tag=summon2] at @s run function ut:move/bone_smal
 kill @e[type=marker,tag=random_as]
 
 scoreboard players set @s unloadtime 3
+scoreboard players set @s[tag=attack_buffed] unloadtime 2
 scoreboard players add @s mpcooldown 1
 function ut:player/infight/use

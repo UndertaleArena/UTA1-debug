@@ -2,7 +2,7 @@
 
 scoreboard players set @s novoid_timer 100
 
-attribute @s generic.knockback_resistance modifier add novoidkbr 1.0 add_value
+attribute @s knockback_resistance modifier add novoidkbr 1.0 add_value
 
 tag @s add no_mc_dmg
 

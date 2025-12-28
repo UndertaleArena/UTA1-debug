@@ -1,4 +1,4 @@
-#By Nebulirion#By Nebulirion
+#By Nebulirion
 
 function ut:game/border/game_end
 scoreboard players operation -speed border *= 4 const

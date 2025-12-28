@@ -7,7 +7,7 @@ function ut:move/fire_bullet
 playsound minecraft:entity.generic.small_fall player @a ~ ~ ~ 0.5 2
 ###SUMMON ENTITY
 execute positioned ^0.0 ^0.0 ^0.0 positioned ~-0.0 ~-1.5 ~-0.0 run function ut:move/rot/12
-data merge entity @e[tag=summon,limit=1] {Tags:[shoot,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,Pose:{Head:[0f,0.001f,0f]},Fire:32676,ArmorItems:[{},{},{},{id:"minecraft:bone_meal",count:1b,components:{custom_model_data:11}}],CustomName:'{"text":"\\u0053\\u0059\\u004d\\u0042\\u004f\\u004c","font":"minecraft:wingdings"}'}
+data merge entity @e[tag=summon,limit=1] {Tags:[shoot,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,Pose:{Head:[0f,0.001f,0f]},Fire:32676,equipment:{head:{id:"minecraft:bone_meal",count:1b,components:{custom_model_data:{floats:[11]}}}},CustomName:{"text":"\u0053\u0059\u004d\u0042\u004f\u004c","font":"minecraft:wingdings"}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s prj_speed
 scoreboard players operation #player damage = @s atk

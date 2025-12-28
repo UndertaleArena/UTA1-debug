@@ -1,5 +1,14 @@
 #By Nebulirion
 
+scoreboard players set @a ptsd_elim 0
+scoreboard players set @a ptsd_death 0
+scoreboard players set @a ptsd_assist 0
+scoreboard players set @a ptsd_dtuse 0
+scoreboard players set @a ptsd_tdmg 0
+scoreboard players set @a ptsd_dmg 0
+scoreboard players set @a ptsd_wdmg 0
+scoreboard players set @a ptsd_dmged 0
+
 function ut:game/start_basic
 
 execute unless score -GameMode game matches 0..7 run scoreboard players set -GameMode game 1

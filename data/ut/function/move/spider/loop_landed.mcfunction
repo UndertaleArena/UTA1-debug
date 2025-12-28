@@ -22,4 +22,6 @@ tag @s remove atker
 tag @a remove spider_target
 
 scoreboard players add @s life 1
+
+execute if score @s life matches 60.. run function ut:move/passive/undyne/miss_detect
 execute if score @s life matches 60.. run function ut:void

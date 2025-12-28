@@ -1,6 +1,6 @@
 #By Nebulirion
 
-data modify entity @s CustomName set value '""'
+data modify entity @s CustomName set value ""
 
 scoreboard players add #index tbid 1
 

@@ -7,7 +7,7 @@ scoreboard players operation #old aid = #aid aid
 playsound minecraft:item.honey_bottle.drink player @a ~ ~ ~ 1 0.5
 playsound minecraft:block.dispenser.launch player @a ~ ~ ~ 1 1.6
 
-execute rotated ~ 0 positioned ^ ^ ^.3 run summon minecraft:armor_stand ~.2 ~2.4 ~.3 {Tags:[summon,move,syringe,syringe_dust,spc],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:rotten_flesh",count:1b,components:{custom_model_data:1}}],Pose:{Head:[0f,0f,0f]},CustomName:'{"translate":"chr.alphys.dtn"}'}
+execute rotated ~ 0 positioned ^ ^ ^.3 run summon minecraft:armor_stand ~.2 ~2.4 ~.3 {Tags:[summon,move,syringe,syringe_dust,spc,no_passive],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,equipment:{head:{id:"minecraft:rotten_flesh",count:1,components:{"minecraft:custom_model_data":{floats:[1]}}}},Pose:{Head:[0f,0f,0f]},CustomName:{"translate":"chr.alphys.dtn"}}
 
 scoreboard players set #this damage 0
 scoreboard players set #this lifetime 40

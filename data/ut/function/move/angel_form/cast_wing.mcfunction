@@ -2,7 +2,7 @@
 
 #check on this
 execute positioned ^ ^ ^ run function ut:move/rot/12husk
-data merge entity @e[tag=summon,limit=1] {Tags:[summon,move,spc,angel_wing],NoGravity:1b,Invulnerable:1b,Silent:1b,NoAI:1b,ArmorItems:[{},{},{},{}],CustomNameVisible:0b,Team:"nocol"}
+data merge entity @e[tag=summon,limit=1] {Tags:[summon,move,spc,angel_wing],NoGravity:1b,Invulnerable:1b,Silent:1b,NoAI:1b,CustomNameVisible:0b,Team:"nocol"}
 
 scoreboard players set #this lifetime 1000
 scoreboard players set #this damage 0

@@ -1,6 +1,6 @@
 #By Nebulirion
 
-data modify storage ut:main ChrID.value set from entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".passive
+data modify storage ut:main ChrID.value set from entity @s equipment.chest.components."minecraft:custom_data".passive
 
 execute if data storage ut:main ChrID{value:"sans"} run scoreboard players set @s chr 1
 execute if data storage ut:main ChrID{value:"papyrus"} run scoreboard players set @s chr 2

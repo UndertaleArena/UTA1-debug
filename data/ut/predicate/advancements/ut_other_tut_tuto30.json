@@ -3,8 +3,8 @@
     "entity": "this",
     "predicate":
     {
-      "player":
-      {
+    "type_specific":{
+        "type": "player",
           "advancements": {
               "ut:other/tut/tuto30": true
           }

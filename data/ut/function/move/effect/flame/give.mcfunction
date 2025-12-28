@@ -6,6 +6,6 @@ tag @s add effect_flame
 
 #effect give @s minecraft:hunger 100 0 false
 
-#title @s title ["",{"translate":"sts.shocked"},{"translate":"sts.excl"}]
+#title @s title ["",{"translate":"sts.flamed"},{"translate":"sts.excl"}]
 #title @s times 5 20 5
 #scoreboard players set @s title_timer 25

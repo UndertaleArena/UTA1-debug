@@ -6,7 +6,6 @@ execute if score flowey tutorial matches 7.. run function ut:lobby/tutorial/acti
 execute if score @s move_loop matches 1.. run function ut:move/player_loop/main
 
 ###Movement
-function ut:player/movetest
 scoreboard players reset @s shift
 
 execute if score @s title_timer matches 1.. run scoreboard players remove @s title_timer 1
@@ -28,7 +27,7 @@ execute if score flowey tutorial matches 7.. unless score @s mpcooldown matches 
 scoreboard players remove @s[scores={cdcooldown=1..}] cdcooldown 1
 execute if score flowey tutorial matches 9.. unless score @s cdcooldown matches 1.. if score @s cd < @s cdmax run function ut:player/cd/regenerate
 #dt
-execute if score flowey tutorial matches 15.. if entity @s[tag=!dt_ready] if score @s will > #dtLim will run function ut:player/dt/regenerate
+execute if score flowey tutorial matches 15.. if score @s will > #dtLim will run function ut:player/dt/regenerate
 
 ###Right Click
 #scoreboard players remove @s[scores={unloadtime=1..}] unloadtime 1

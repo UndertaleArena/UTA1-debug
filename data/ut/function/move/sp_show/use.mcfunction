@@ -1,10 +1,12 @@
 #By Nebulirion
 
 execute if score -Enabled stat matches 1 run scoreboard players add @s st_cdtuse 1
-scoreboard players set #reset dt 1
+execute if score -Enabled stat matches 1 run scoreboard players add @s ptsd_dtuse 1
+execute if entity @s[tag=!passive_papyrus] run scoreboard players set #reset dt 1
+execute if entity @s[tag=passive_papyrus] run scoreboard players operation @s dt -= @s dthalf
 
 scoreboard players set -Transform store 1
-execute if data entity @s Inventory[{components:{"minecraft:custom_data":{sp_switch:1b},"minecraft:custom_model_data":108}}] run scoreboard players set -Transform store 0
+execute if data entity @s Inventory[{components:{"minecraft:custom_data":{sp_switch:1b},"minecraft:custom_model_data":{floats:[108.0f]}}}] run scoreboard players set -Transform store 0
 
 ###ROBOTS
 function ut:move/sp_show/fireworks

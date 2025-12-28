@@ -1,9 +1,11 @@
 #By Nebulirion
 
 scoreboard players add @s st_cdeathc 1
+scoreboard players add @s ptsd_death 1
 scoreboard players add @a[tag=killer_p,tag=!deader] st_ckillc 1
 scoreboard players add @a[tag=spare_p,tag=!deader] st_csparec 1
 scoreboard players add @a[tag=cause_p,tag=!deader] st_celimc 1
+scoreboard players add @a[tag=cause_p,tag=!deader] ptsd_elim 1
 execute if entity @s[tag=void] run scoreboard players add AK st_killc 1
 
 #if self kill: remove 1 score (elim mode)

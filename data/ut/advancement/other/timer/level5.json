@@ -17,7 +17,7 @@
         ],
         "icon": {
             "id": "minecraft:nether_brick",
-            "components": {"custom_model_data":24}
+            "components": {"custom_model_data":{"floats":[24]}}
         },
         "frame": "goal",
         "show_toast": true,

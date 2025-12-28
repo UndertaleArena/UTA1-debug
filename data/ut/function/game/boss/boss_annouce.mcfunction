@@ -2,7 +2,7 @@
 
 scoreboard players set #animation game 0
 
-execute as @a[tag=playing] at @s run playsound minecraft:entity.wither.spawn player @s ~ ~ ~ 2 1 
+execute as @a[tag=playing] at @s run playsound minecraft:entity.wither.spawn player @s ~ ~ ~ 2 1
 title @a[tag=!boss] title {"translate": "boss.0","with": [{"selector": "@s"}]}
 title @a[tag=!boss] subtitle {"translate": "boss.1"}
 title @s title {"translate": "boss.2"}

@@ -11,4 +11,4 @@ execute if score #factor random matches 1.. run scoreboard players operation min
 scoreboard players set @s dog 0
 item replace block 255 0 255 container.0 with nether_brick
 item modify block 255 0 255 container.0 ut:random
-execute store result score @s[advancements={ut:other/timer/level5=true}] dog run data get block 255 0 255 Items[0].components."minecraft:attribute_modifiers".modifiers[0].amount
+execute store result score @s[advancements={ut:other/timer/level5=true}] dog run data get block 255 0 255 Items[0].components."minecraft:attribute_modifiers"[0].amount

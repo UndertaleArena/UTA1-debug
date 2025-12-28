@@ -21,4 +21,4 @@ execute if score @s rc matches 1.. unless score @s unloadtime matches 1.. at @s 
 execute if data entity @s SelectedItem.components."minecraft:custom_data".selector anchored eyes run function ut:lobby/ray/main
 
 ###FRISK
-execute if block ~ 130 ~ ochre_froglight if score @s chr matches 4 if entity @s[advancements={ut:chr/frisk/lv20=true}] run function ut:lobby/misc/jump
+execute if block ~ 130 ~ ochre_froglight if score @s chr matches 4 run function ut:lobby/misc/jump

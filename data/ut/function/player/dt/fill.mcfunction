@@ -1,6 +1,11 @@
 #By Nebulirion
 
-scoreboard players operation @s dt = @s dtmax
+# if papyrus passive
+execute if entity @s[tag=!passive_papyrus] run scoreboard players operation @s dt = @s dtmax
+execute unless score @s dt >= @s dthalf if entity @s[tag=passive_papyrus] run scoreboard players operation @s dt += @s dthalf
+# if already filled, restore value as max_dt
+execute if entity @s[tag=dt_ready] run scoreboard players operation @s dt = @s dtmax
+
 tag @s add dt_ready
 function ut:player/dt/update
 

@@ -37,6 +37,6 @@ tag @s remove void_immune
 tag @s remove real_spectator_mode
 tag @s[tag=!boss] remove no_mc_dmg
 
-#no fall
+#no fall dmg
 #effect give @s minecraft:slow_falling 1 0 true
-function ut:move/effect/nofall/give
+# function ut:move/effect/nofall/give

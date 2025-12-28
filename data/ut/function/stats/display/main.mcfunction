@@ -2,10 +2,8 @@
 
 scoreboard players set @a[tag=ray_user,limit=1] unloadtime 20
 
-scoreboard players set -replacedata store 0
-function ut:stats/get_player_data
-data modify storage utstats:main LoadedStats set from storage utstats:main LoadedPlayer.Player
-function ut:stats/get_stats
+function ut:stats/player_data/get
+function ut:stats/player_data/stats_player
 
 function ut:stats/display/calculate
 

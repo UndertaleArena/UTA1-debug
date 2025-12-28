@@ -8,13 +8,14 @@ function ut:system/team/collision_off
 
 execute unless score fun info matches 1..100 run function ut:fun
 
+forceload add 255 255
 forceload add 272 1280
 forceload add 259 1306 266 1361
 
 tag @a remove no_firework
 tag @a remove no_mc_dmg
 tag @a remove void_immune
-gamerule fallDamage false
+gamerule fall_damage false
 
 scoreboard objectives setdisplay list gamesfinished
 scoreboard objectives setdisplay below_name

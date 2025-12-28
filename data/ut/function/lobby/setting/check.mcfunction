@@ -40,9 +40,9 @@ execute if score hq_parkour info matches 13 run item replace entity @e[tag=hq_pa
 execute if score hq_parkour info matches 1 run item replace entity @e[tag=hq_parkour,limit=1] armor.head with charcoal
 
 execute if score setSoul gamerule matches 0 run item replace entity @e[tag=experiment_soul,limit=1] armor.head with coal
-execute if score setSoul gamerule matches 1 run item replace entity @e[tag=experiment_soul,limit=1] armor.head with charcoal[custom_model_data=1]
+execute if score setSoul gamerule matches 1 run item replace entity @e[tag=experiment_soul,limit=1] armor.head with charcoal[custom_model_data={floats:[1]}]
 
 execute if score voidProtection gamerule matches 0 run item replace entity @e[tag=experiment_void,limit=1] armor.head with coal
-execute if score voidProtection gamerule matches 1 run item replace entity @e[tag=experiment_void,limit=1] armor.head with charcoal[custom_model_data=1]
+execute if score voidProtection gamerule matches 1 run item replace entity @e[tag=experiment_void,limit=1] armor.head with charcoal[custom_model_data={floats:[1]}]
 
 function ut:lobby/gamerule/check

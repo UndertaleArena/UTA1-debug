@@ -16,4 +16,4 @@ execute positioned ^ ^ ^ run function ut:move/dummy_friend/loop_prepare_user_pre
 execute as @e[type=husk,tag=dummy_preparing,tag=flying_knife] anchored eyes positioned ^ ^ ^ run function ut:move/flying_knife/loop_prepare_user
 
 scoreboard players remove @s plt1 1
-execute if score @s plt1 matches ..-60 run function ut:move/dummy_charge/use_shoot
+execute if score @s plt1 matches ..-80 run function ut:move/dummy_charge/use_shoot

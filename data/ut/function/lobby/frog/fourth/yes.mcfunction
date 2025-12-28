@@ -1,4 +1,4 @@
-#By Nebulirion while in class (im paying attention so don't judge me ok)
+#By Nebulirion while in class (im paying attention so dont judge me ok)
 
 execute unless score @s frog_talk matches 52..60 run scoreboard players set @s frog_talk 51
 execute if score @s frog_talk matches 58 run scoreboard players set @s frog_talk 55

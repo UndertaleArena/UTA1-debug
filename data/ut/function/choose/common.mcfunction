@@ -19,6 +19,7 @@ execute if score -InGame game matches 1 if score -Enabled stat matches 1 if scor
 scoreboard players operation @s last_chr_ingame = @s chr
 #
 scoreboard players set @s advancement 0
+scoreboard players set @s advancement_c 0
 execute unless score -tobying store matches 1 run function ut:choose/maxrate
 #
 scoreboard players operation @s willmax = hpmaxRate gamerule

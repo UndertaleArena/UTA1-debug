@@ -13,4 +13,4 @@ function ut:lobby/map/unlock_count
 #
 tellraw @s [{"translate":"pfx.game"},{"translate":"cht.gmd0","with":[{"storage":"ut:modes","nbt":"Selected.Name","interpret":true}]}]
 #
-execute as @e[tag=lobby_menupos,limit=1] at @s positioned ~ ~-.5 ~ run function ut:lobby/menu/page3.x 
+execute as @e[tag=lobby_menupos,limit=1] at @s positioned ~ ~-.5 ~ run function ut:lobby/menu/page3.x

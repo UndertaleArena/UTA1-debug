@@ -1,6 +1,6 @@
 #By Nebulirion
 
-scoreboard players set @s last_fight 0
+# scoreboard players set @s last_fight 0
 scoreboard players set @s unloadtime 20
 
 scoreboard players set @s life 0

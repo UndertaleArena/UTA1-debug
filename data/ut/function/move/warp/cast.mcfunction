@@ -1,8 +1,8 @@
 #Original By Nebulirion, edited by SY
 
 #time set
-summon minecraft:marker ~ ~ ~ {Tags:[warp,warp_target,summon],CustomName:'"warp target"'}
-summon minecraft:marker ~ ~ ~ {Tags:[warp,warp_pos,summon],CustomName:'"warp"'}
+summon minecraft:marker ~ ~ ~ {Tags:[warp,warp_target,summon],CustomName:"warp target"}
+summon minecraft:marker ~ ~ ~ {Tags:[warp,warp_pos,summon],CustomName:"warp"}
 
 scoreboard players set #this damage 0
 scoreboard players set #this lifetime -1

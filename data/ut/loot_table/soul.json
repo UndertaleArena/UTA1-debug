@@ -27,7 +27,7 @@
                           "modifiers": [
                               {
                                   "amount": 1.0,
-                                  "attribute": "generic.luck",
+                                  "attribute": "luck",
                                   "operation": "add_value",
                                   "id": "hihinebhere",
                                   "slot": "offhand"

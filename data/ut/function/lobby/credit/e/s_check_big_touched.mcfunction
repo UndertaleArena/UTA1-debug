@@ -13,4 +13,4 @@ item replace entity @s armor.chest with air
 data merge entity @s {CustomNameVisible:0b,Marker:1b,ShowArms:0b}
 
 execute if score @s credit_hit matches 2.. run loot replace entity @s armor.head loot ut:count
-execute if score @s credit_hit matches 2.. run data modify entity @s CustomName set from entity @s ArmorItems[3].components."minecraft:custom_name"
+execute if score @s credit_hit matches 2.. run data modify entity @s CustomName set from entity @s equipment.head.components."minecraft:custom_name"

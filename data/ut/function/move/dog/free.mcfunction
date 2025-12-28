@@ -8,7 +8,7 @@ tag @s remove captured
 
 scoreboard players operation #this aid = @s aid
 execute as @e[tag=dog_model] if score @s aid = #this aid run team join c0 @s
-execute as @e[tag=dog_model] if score @s aid = #this aid run data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 1
+execute as @e[tag=dog_model] if score @s aid = #this aid run data modify entity @s equipment.head.components."minecraft:custom_model_data".floats[0] set value 1
 
 scoreboard players set @s pid 0
 scoreboard players set @s tid 0

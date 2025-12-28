@@ -4,7 +4,7 @@
         "modifiers": [
             {
                 "id":"ut:26048",
-                "attribute":"generic.attack_damage",
+                "attribute":"attack_damage",
                 "slot": "mainhand",
                 "amount": -10.0,
                 "operation":"add_value"

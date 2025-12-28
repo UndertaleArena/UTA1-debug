@@ -12,6 +12,7 @@ tag @s remove cdmax_lock
 
 scoreboard players reset @s plt3
 scoreboard players reset @s plt3b
+scoreboard players reset @s plt4
 
 execute if entity @s[tag=effect_finalrush] run function ut:move/effect/finalrush/clear
 execute if entity @s[tag=effect_flirt] run function ut:move/effect/infatuated/clear
@@ -45,6 +46,7 @@ execute if entity @s[tag=passive_muffet] run function ut:move/passive/muffet/cle
 execute if entity @s[tag=attack_buffed] run function ut:move/_buffed/remove_status_full
 
 function ut:move/player_loop/fullstoplite
+
 
 #say Move Loop -> 0!
 scoreboard players set @s move_loop 0

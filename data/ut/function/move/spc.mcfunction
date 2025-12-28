@@ -17,5 +17,6 @@ execute if entity @s[tag=name] run function ut:move/name/loop
 execute if entity @s[tag=siege_rock] run function ut:move/siege_rock/loop
 execute if entity @s[tag=boss_soul] run function ut:move/soul/loop
 execute if entity @s[tag=delete_target] run function ut:move/delete/loop
+execute if entity @s[tag=save_display] run function ut:move/save/loop
 execute if entity @s[tag=kb_slime] run function ut:move/_knockback/loop
 execute if entity @s[tag=pellet_tut] run function ut:move/pellets_tutorial/loop

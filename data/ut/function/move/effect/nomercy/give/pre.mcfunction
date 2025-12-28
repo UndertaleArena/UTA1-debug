@@ -3,9 +3,9 @@ data modify block 255 0 255 Items set value []
 item replace block 255 0 255 container.0 with minecraft:carrot_on_a_stick[custom_data={spare:1b}]
 item modify block 255 0 255 container.0 ut:no_melee
 
-# check player type
-execute if entity @s[tag=!nomercy_user] run function ut:move/effect/nomercy/give/hiter
-execute if entity @s[tag=nomercy_user] run function ut:move/effect/nomercy/give/user
+# check player type to modify data
+execute if entity @s[tag=!nomercy_user] run item modify block 255 0 255 container.0 ut:spare/brk
+execute if entity @s[tag=nomercy_user] run item modify block 255 0 255 container.0 ut:spare/dis
 
 # give back via shulker method
 execute unless items entity @s hotbar.8 * run loot replace entity @s hotbar.8 1 mine 255 0 255 minecraft:diamond_pickaxe[custom_data={isShulkerMarker:1b}]

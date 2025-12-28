@@ -3,7 +3,7 @@
 scoreboard players set -new mlmax 60
 effect give @s minecraft:slowness 1 1 true
 
-summon minecraft:marker ~ ~ ~ {Tags:[atker,knife,killonhit,blockable],CustomName:'{"translate":"chr.chara.mwxn"}'}
+summon minecraft:marker ~ ~ ~ {Tags:[atker,knife,killonhit,blockable],CustomName:{"translate":"chr.chara.mwxn"}}
 
 scoreboard players set #damage damage 900
 scoreboard players operation #damage damage *= @s atk

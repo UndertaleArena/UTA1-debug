@@ -12,9 +12,9 @@ execute if score clear store matches 1.. run loot give @s mine 255 0 255 minecra
 scoreboard players operation #this pid = @s pid
 execute as @e[tag=trident] if score @s sid = #this pid run function ut:move/trident/change_t
 #
-attribute @s generic.movement_speed modifier remove tridentslow
+attribute @s movement_speed modifier remove tridentslow
 
-scoreboard players reset @s plt1
+scoreboard players reset @s plt2
 scoreboard players remove @s[tag=trident_user] move_loop 1
 tag @s remove trident_user
 function ut:move/counter/stop

@@ -14,7 +14,7 @@ tag @s remove blockable
 scoreboard players operation #atker pid = @s pid
 scoreboard players operation #atker tid = @s tid
 scoreboard players operation #damage damage = @s damage
-scoreboard players operation #damage damage = @s damage
+scoreboard players operation #damage damage /= 2 const
 
 execute positioned ~-.75 ~-.75 ~-.75 as @a[dx=0.5,dy=0.5,dz=0.5,tag=playing,tag=!untargetable] positioned ~.75 ~.75 ~.75 run function ut:move/lazer_bullet_buffed/explode_hitcheck
 

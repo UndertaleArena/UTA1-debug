@@ -2,7 +2,7 @@
 
 scoreboard players reset @s novoid_timer
 
-attribute @s generic.knockback_resistance modifier remove novoidkbr
+attribute @s knockback_resistance modifier remove novoidkbr
 
 effect clear @s levitation
 

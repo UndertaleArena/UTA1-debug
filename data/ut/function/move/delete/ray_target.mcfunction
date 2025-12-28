@@ -1,13 +1,13 @@
 #By Nebulirion
 
 #temp for position
-summon marker ~ ~ ~ {Tags:[summon,low_search],CustomName:'"LowPos Finder"'}
+summon marker ~ ~ ~ {Tags:[summon,low_search],CustomName:"LowPos Finder"}
 
 #ray tag add
 tag @s add ray_find
 
 #avoiding lowest problem
-##get the lowest place's score
+##get the lowest places score
 execute store result score t y_pos run data get entity @e[tag=low_search,limit=1] Pos[1] 100
 ##check if lower lowpos
 execute if score t y_pos <= -LowPos y_pos run tag @s remove ray_find

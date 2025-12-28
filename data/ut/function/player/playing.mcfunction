@@ -7,9 +7,6 @@ scoreboard players add @s st_gametime 1
 function ut:player/actionbar/main
 
 ###Movement
-#scoreboard players add @s move 1
-function ut:player/movetest
-#execute if predicate ut:effects/blue run particle end_rod ~ ~2 ~
 
 ###inFight
 function ut:player/infight/loop
@@ -26,7 +23,7 @@ execute unless score @s[tag=!effect_stun,tag=!effect_flirt] mpcooldown matches 1
 scoreboard players remove @s[scores={cdcooldown=1..}] cdcooldown 1
 execute unless score @s cdcooldown matches 1.. if score @s cd < @s cdmax run function ut:player/cd/regenerate
 #dt
-execute unless score dtRule gamerule matches 0 unless score dtRule gamerule matches 2 if entity @s[tag=!dt_ready,tag=!dt_shield] if score @s will > #dtLim will run function ut:player/dt/regenerate
+execute unless score dtRule gamerule matches 0 unless score dtRule gamerule matches 2 if entity @s[tag=!dt_shield] if score @s will > #dtLim will run function ut:player/dt/regenerate
 
 #vanillaDamage
 execute if score @s eaid matches 1.. run function ut:move/melee/attacker
@@ -41,7 +38,11 @@ execute if score @s move_loop matches 1.. run function ut:move/player_loop/main
 ###rightClick
 scoreboard players remove @s[scores={unloadtime=1..}] unloadtime 1
 scoreboard players remove @s[scores={unloadtime_2nd=1..}] unloadtime_2nd 1
+scoreboard players remove @s[scores={unloadtime_4th=1..}] unloadtime_4th 1
 execute if score @s rc matches 1.. at @s run function ut:player/rc_cond
+
+###passive
+function ut:player/passive
 
 ###Particle
 #!Teammate/Enemy Particle

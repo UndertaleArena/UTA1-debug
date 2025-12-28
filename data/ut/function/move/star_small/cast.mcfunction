@@ -8,7 +8,7 @@ particle end_rod ^ ^ ^-.7 0 0 0 0 0 force @a[scores={Q=2..}]
 particle end_rod ^ ^ ^ 0 0 0 0 0 force @a[scores={Q=2..}]
 particle end_rod ^ ^ ^0.7 0 0 0 0 0 force @a[scores={Q=2..}]
 ###SUMMON ENTITY
-summon minecraft:armor_stand ^0.0 ^0.0 ^0.0 {Tags:[star_small,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:rabbit_hide",count:1b}],CustomName:'{"translate":"chr.asriel.chn2"}'}
+summon minecraft:armor_stand ^0.0 ^0.0 ^0.0 {Tags:[star_small,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,equipment:{head:{id:"minecraft:rabbit_hide",count:1b}},CustomName:{"translate":"chr.asriel.chn2"}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s speed
 scoreboard players operation #player prj_speed *= 40 const

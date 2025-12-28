@@ -16,3 +16,4 @@ tp @s @s
 effect give @s[scores={N=0..}] minecraft:night_vision infinite 1 true
 #execute at @s run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 1
 execute at @e[tag=credit_play] positioned ~ ~56 ~ run tp @s[distance=4..] ~ ~ ~
+

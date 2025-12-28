@@ -19,7 +19,6 @@ execute if entity @s[tag=flirt] run function ut:move/flirt/loop
 execute if entity @s[tag=star_blaze] run function ut:move/star_blaze/loop
 execute if entity @s[tag=star_small] run function ut:move/star_small/loop
 execute if entity @s[tag=angel_shot] run function ut:move/angel_shot/loop
-execute if entity @s[tag=bomb] run function ut:move/bomb/loop
 execute if entity @s[tag=shock_bullet] run function ut:move/shock_bullet/loop
 execute if entity @s[tag=lazer_bullet] run function ut:move/lazer_bullet/loop
 execute if entity @s[tag=lazer_bullet_buffed] run function ut:move/lazer_bullet_buffed/loop
@@ -36,3 +35,5 @@ execute if entity @s[tag=vine_seed] run function ut:move/vine_seed/loop
 execute if entity @s[tag=dummy_mech] run function ut:move/dummy_mech/loop
 execute if entity @s[tag=dummy_bullet_mech] run function ut:move/dummy_bullet_mech/loop
 execute if entity @s[tag=shoot] run function ut:move/shoot/loop
+
+execute if entity @s[tag=bomb] run function ut:move/bomb/loop

@@ -7,7 +7,7 @@ function ut:move/fire_bullet
 playsound item.firecharge.use player @a ~ ~ ~ 2 0.8
 ###SUMMON ENTITY
 execute positioned ^0.0 ^-0.3 ^0.0 run function ut:move/rot/18
-data merge entity @e[tag=summon,limit=1] {Tags:[firehand,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:wheat",count:1b}],CustomName:'{"translate":"chr.asgore.mpn1"}'}
+data merge entity @e[tag=summon,limit=1] {Tags:[firehand,killonhit,blockable,reflectable,cutable,prj2,move,summon],NoGravity:1b,Invisible:1b,Marker:1b,equipment:{head:{id:"minecraft:wheat",count:1b}},CustomName:{"translate":"chr.asgore.mpn1"}}
 ###SETUP ENTITY
 scoreboard players operation #player prj_speed = @s prj_speed
 scoreboard players operation #player damage = @s atk

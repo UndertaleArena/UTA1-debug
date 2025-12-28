@@ -3,7 +3,9 @@
 #playsound minecraft:entity.spider.ambient player @a ~ ~ ~ 1 1.2
 
 execute if score -Enabled stat matches 1 run scoreboard players add @s st_cdtuse 1
-scoreboard players set #reset dt 1
+execute if score -Enabled stat matches 1 run scoreboard players add @s ptsd_dtuse 1
+execute if entity @s[tag=!passive_papyrus] run scoreboard players set #reset dt 1
+execute if entity @s[tag=passive_papyrus] run scoreboard players operation @s dt -= @s dthalf
 
 execute rotated ~ 0 if block ^ ^0.1 ^1.5 #ut:trans if block ^ ^0.1 ^2.5 #ut:trans if block ^ ^0.1 ^3.5 #ut:trans positioned ^ ^.1 ^2.5 run function ut:move/cupcake/cast
 execute rotated ~ 0 if block ^ ^0.1 ^1.5 #ut:trans if block ^ ^0.1 ^2.5 #ut:trans unless block ^ ^0.1 ^3.5 #ut:trans positioned ^ ^.1 ^1.5 run function ut:move/cupcake/cast
