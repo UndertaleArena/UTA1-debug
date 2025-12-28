@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:structure_void",
+    "minecraft:seagrass",
+    "minecraft:barrier",
+    "minecraft:smooth_red_sandstone_stairs",
+    "minecraft:smooth_red_sandstone_slab",
+    "#ut:transparent"
+  ]
+}

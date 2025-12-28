@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.other.tuto30"
+        },
+        "description": {
+            "translate": "adv.other.tuto30.lore"
+        },
+        "icon": {
+            "id": "minecraft:golden_carrot"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:other/tut/root"
+}

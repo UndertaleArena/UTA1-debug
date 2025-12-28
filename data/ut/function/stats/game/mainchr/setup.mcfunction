@@ -1,0 +1,35 @@
+#By Nebulirion
+
+#Check if entry belongs to player
+scoreboard players set #chr01time stat 0
+scoreboard players set #chr02time stat 0
+scoreboard players set #chr03time stat 0
+scoreboard players set #chr04time stat 0
+scoreboard players set #chr05time stat 0
+scoreboard players set #chr06time stat 0
+scoreboard players set #chr07time stat 0
+scoreboard players set #chr08time stat 0
+scoreboard players set #chr09time stat 0
+scoreboard players set #chr10time stat 0
+scoreboard players set #chr11time stat 0
+scoreboard players set #chr12time stat 0
+scoreboard players set #chr13time stat 0
+scoreboard players set #chr14time stat 0
+scoreboard players set #chr15time stat 0
+scoreboard players set #chr16time stat 0
+scoreboard players set #chr17time stat 0
+scoreboard players set #chr18time stat 0
+scoreboard players set #chr19time stat 0
+scoreboard players set #chr20time stat 0
+scoreboard players set #chr21time stat 0
+scoreboard players set #chr22time stat 0
+scoreboard players set #chr23time stat 0
+scoreboard players set #chr24time stat 0
+scoreboard players set #chr25time stat 0
+scoreboard players set #chr26time stat 0
+scoreboard players set #chr27time stat 0
+scoreboard players set #chr28time stat 0
+scoreboard players set #chr29time stat 0
+scoreboard players set #chr30time stat 0
+scoreboard players set #chr31time stat 0
+scoreboard players set #chr32time stat 0

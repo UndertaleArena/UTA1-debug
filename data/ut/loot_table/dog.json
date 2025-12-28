@@ -1,0 +1,108 @@
+{
+    "type":"minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "conditions": [
+                        {
+                            "condition": "any_of",
+                            "terms":[
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "player": {
+                                            "advancements": {
+                                                "ut:other/timer/level5": false
+                                            }
+                                        }
+                                    }
+                                },
+                                
+                                {
+                                    "condition": "inverted",
+                                    "term": {
+                                        "condition": "any_of",
+                                        "terms": [
+                                            {
+                                                "condition": "entity_properties",
+                                                "entity": "this",
+                                                "predicate": {
+                                                    "player": {
+                                                        "advancements": {
+                                                            "ut:other/timer/level5": false
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "condition": "entity_scores",
+                                                "entity": "this",
+                                                "scores": {"dog": 66}
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions":[
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"chr.toby.mp","italic":false}
+                        },
+                        {
+                            "function": "minecraft:set_custom_model_data",
+                            "value": 106
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{mp_move:1b,cost:25,bark:1b}"
+                        }
+                    ]
+                },
+                {
+                    "conditions": [
+                        {
+                            "condition": "entity_scores",
+                            "entity": "this",
+                            "scores": {"dog": 66}
+                        },
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "advancements": {
+                                        "ut:other/timer/level5": true
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions":[
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"text":"Piece of W.D. Gaster","italic":false}
+                        },
+                        {
+                            "function": "minecraft:set_custom_model_data",
+                            "value": 666
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{mp_move:1b,cost:25,bark:1b,head:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

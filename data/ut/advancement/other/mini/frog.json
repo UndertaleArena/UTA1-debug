@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.mini.frog"
+        },
+        "description": {
+            "translate": "adv.mini.frog.lore"
+        },
+        "icon": {
+            "id": "minecraft:melon_slice"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "welcome": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:other/mini/root"
+}

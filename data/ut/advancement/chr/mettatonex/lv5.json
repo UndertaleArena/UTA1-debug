@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.mettatonex.lv5"
+        },
+        "description": [{
+            "translate": "adv.chr.lv5","with": [
+                {
+                    "translate": "chr.mettatonex"
+                }
+            ]
+        },
+        {"text":"\n"},
+        {
+            "translate": "adv.chr.mettatonex.lv5.unlock"
+        }],
+        "icon": {
+            "id": "minecraft:kelp"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/mettatonex/root"
+}

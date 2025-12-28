@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.maddummy.lv20"
+        },
+        "description": {
+            "translate": "adv.chr.lv20","color":"green","with": [
+                {
+                    "translate": "chr.maddummy"
+                }
+            ]
+        },
+        "icon": {
+            "id": "minecraft:copper_ingot"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/maddummy/secret"
+}

@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.undyne.lv20"
+        },
+        "description": [{
+            "translate": "adv.chr.lv20","color":"green","with": [
+                {
+                    "translate": "chr.undyne"
+                }
+            ]
+        },
+        {"text":"\n"},
+        {
+            "translate": "adv.chr.undyne.lv20.unlock"
+        }],
+        "icon": {
+            "id": "minecraft:salmon"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/undyne/secret"
+}

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.other.timer4"
+        },
+        "description": {
+            "translate": "adv.other.timer4.lore"
+        },
+        "icon": {
+            "id": "minecraft:melon_seeds"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:timer1"
+            }
+        },
+        "2": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:timer2"
+            }
+        },
+        "3": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:timer3"
+            }
+        }
+    },
+    "parent": "ut:other/timer/level3"
+}

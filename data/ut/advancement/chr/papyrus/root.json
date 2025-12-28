@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "translate": "chr.papyrus"
+        },
+        "description": {
+            "translate": "adv.chr.play1","with": [
+                {
+                    "translate": "chr.papyrus"
+                }
+            ]
+        },
+        "icon": {
+            "id": "minecraft:nether_brick",
+            "components": {"custom_model_data":2}
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "first": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/root"
+}

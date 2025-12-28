@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:honey_bottle",
+    "minecraft:bread",
+    "minecraft:dried_kelp",
+    "minecraft:heart_of_the_sea"
+  ]
+}

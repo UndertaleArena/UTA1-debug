@@ -1,0 +1,18 @@
+#By Nebulirion
+
+execute if score -SiegeAttack tid matches 1 run data modify storage bossbar Score3 set value '[" §c[§f||"]'
+execute if score -SiegeAttack tid matches 2 run data modify storage bossbar Score3 set value '[" §b[§f||"]'
+execute if score -SiegeAttack tid matches 3 run data modify storage bossbar Score3 set value '[" §6[§f||"]'
+execute if score -SiegeAttack tid matches 4 run data modify storage bossbar Score3 set value '[" §9[§f||"]'
+execute if score -SiegeAttack tid matches 5 run data modify storage bossbar Score3 set value '[" §e[§f||"]'
+execute if score -SiegeAttack tid matches 6 run data modify storage bossbar Score3 set value '[" §d[§f||"]'
+execute if score -SiegeAttack tid matches 7 run data modify storage bossbar Score3 set value '[" §a[§f||"]'
+execute if score -SiegeAttack tid matches 8 run data modify storage bossbar Score3 set value '[" §f[§f||"]'
+execute if score -SiegeAttack tid matches 1 run data modify storage bossbar Score4 set value '["%||§c]§f "]'
+execute if score -SiegeAttack tid matches 2 run data modify storage bossbar Score4 set value '["%||§b]§f "]'
+execute if score -SiegeAttack tid matches 3 run data modify storage bossbar Score4 set value '["%||§6]§f "]'
+execute if score -SiegeAttack tid matches 4 run data modify storage bossbar Score4 set value '["%||§9]§f "]'
+execute if score -SiegeAttack tid matches 5 run data modify storage bossbar Score4 set value '["%||§e]§f "]'
+execute if score -SiegeAttack tid matches 6 run data modify storage bossbar Score4 set value '["%||§d]§f "]'
+execute if score -SiegeAttack tid matches 7 run data modify storage bossbar Score4 set value '["%||§a]§f "]'
+execute if score -SiegeAttack tid matches 8 run data modify storage bossbar Score4 set value '["%||§f]§f "]'

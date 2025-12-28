@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr"
+        },
+        "description": {
+            "translate": "adv.chr.lore"
+        },
+        "icon": {
+            "id": "minecraft:blaze_rod"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "welcome": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

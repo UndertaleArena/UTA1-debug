@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+      {
+          "rolls": 1,
+          "entries": [
+              {
+                  "type": "minecraft:item",
+                  "name": "minecraft:saddle",
+                  "functions":[
+                      {
+                          "function":"minecraft:set_name",
+                          "name": {"text":"","color":"yellow","italic":false,"extra":[{"selector":"@s"},{"text":" (x"},{"score":{"objective":"credit_hit","name":"@s"}},{"text":")"}]},
+                          "entity": "this"
+                      }
+                  ]
+              }
+          ]
+      }
+   ]
+}

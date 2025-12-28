@@ -1,0 +1,4 @@
+#By Nebulirion
+
+execute store success score -temp plt3 run clear @s carrot_on_a_stick[custom_data~{save:1b}]
+execute if score -temp plt3 matches 1 run give @s minecraft:carrot_on_a_stick[minecraft:custom_model_data=12,minecraft:lore=['{"translate":"dsc.dtmove","italic":false,"color":"red"}','{"text":""}','{"translate":"chr.frisk.dt5","italic":false,"color":"white"}','{"translate":"chr.frisk.dt6","italic":false,"color":"white"}','{"translate":"chr.frisk.dt7","italic":false,"color":"white"}'],minecraft:attribute_modifiers={modifiers:[{amount:-10.0d,name:"generic.attack_damage",operation:"add_value",slot:"mainhand",type:"generic.attack_damage",id:"nomelee"}],show_in_tooltip:0b},minecraft:custom_name='{"text":"","color":"yellow","bold":true,"extra":[{"translate":"chr.frisk.dtn2","italic":false,"color":"white"}]}',minecraft:custom_data={dt_move:1b,save:1b},minecraft:hide_additional_tooltip={}]

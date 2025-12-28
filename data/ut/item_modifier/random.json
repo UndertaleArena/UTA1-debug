@@ -1,0 +1,30 @@
+{
+    "function": "set_attributes",
+    "modifiers": [
+        {
+            "id": "ut:random",
+            "attribute": "minecraft:generic.luck",
+            "operation": "add_value",
+            "slot": "mainhand",
+            "amount": {
+                "type": "uniform",
+                "min": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "min"
+                    },
+                    "score": "random"
+                },
+                "max": {
+                    "type": "score",
+                    "target": {
+                        "type": "fixed",
+                        "name": "max"
+                    },
+                    "score": "random"
+                }
+            }
+        }
+    ]
+}

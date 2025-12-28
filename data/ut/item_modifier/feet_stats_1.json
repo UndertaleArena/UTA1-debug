@@ -1,0 +1,5 @@
+{
+    "function":"minecraft:set_name",
+    "name": {"text":"","italic":false,"color":"yellow","extra":[{"nbt":"ExpBarFin","storage":"hp","interpret":true}]},
+    "entity": "this"
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:infested_chiseled_stone_bricks",
+    "#ut:trans"
+  ]
+}

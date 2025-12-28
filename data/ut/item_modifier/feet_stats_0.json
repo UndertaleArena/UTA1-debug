@@ -1,0 +1,6 @@
+{
+    "function":"minecraft:set_lore",
+    "lore": [{"text":"","italic":false,"color":"white","extra":[{"translate":"stat.chrpick"},{"score":{"objective":"store","name":"#chrpick"}}]},{"text":"","italic":false,"color":"white","extra":[{"translate":"stat.chrwin"},{"score":{"objective":"store","name":"#chrwin"}}]},{"text":"","italic":false,"color":"white","extra":[{"translate":"stat.chrelim"},{"score":{"objective":"store","name":"#chrelim"}}]},{"text":"","italic":false,"color":"white","extra":[{"translate":"stat.chrdmg"},{"score":{"name":"out1","objective":"damage"}},{"text":"."},{"score":{"name":"out3","objective":"damage"}},{"score":{"name":"out2","objective":"damage"}}]}],
+    "entity": "this",
+    "mode": "replace_all" 
+}

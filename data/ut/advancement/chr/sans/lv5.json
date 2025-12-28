@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.sans.lv5"
+        },
+        "description":[{
+            "translate": "adv.chr.lv5","with": [
+                {
+                    "translate": "chr.sans"
+                }
+            ]
+        },
+        {"text":"\n"},
+        {
+            "translate": "adv.chr.sans.lv5.unlock"
+        }],
+        "icon": {
+            "id": "minecraft:beetroot_soup"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/sans/root"
+}

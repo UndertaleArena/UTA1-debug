@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:structure_void",
+    "minecraft:air",
+    "minecraft:gray_stained_glass",
+    "minecraft:black_concrete"
+  ]
+}

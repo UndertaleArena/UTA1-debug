@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.mini.root"
+        },
+        "description": {
+            "translate": "adv.mini.root.lore"
+        },
+        "icon": {
+            "id": "minecraft:beef"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "welcome": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:other/root"
+}

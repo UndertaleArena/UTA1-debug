@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.credit.root"
+        },
+        "description": {
+            "translate": "adv.credit.root.lore"
+        },
+        "icon": {
+            "id": "minecraft:rabbit_stew"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "welcome": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:other/root"
+}

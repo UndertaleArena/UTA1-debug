@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.alphys.lv5"
+        },
+        "description": {
+            "translate": "adv.chr.lv5","with": [
+                {
+                    "translate": "chr.alphys"
+                }
+            ]
+        },
+        "icon": {
+            "id": "minecraft:dried_kelp"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/alphys/root"
+}

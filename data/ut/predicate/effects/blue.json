@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "movement": {
+            "horizontal_speed": {
+                "min": 0.0,
+                "max": 0.5
+            },
+            "vertical_speed": {
+                "min": 0.0,
+                "max": 0.5
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.alphys.lv20"
+        },
+        "description": {
+            "translate": "adv.chr.lv20","color":"green","with": [
+                {
+                    "translate": "chr.alphys"
+                }
+            ]
+        },
+        "icon": {
+            "id": "minecraft:rotten_flesh"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/alphys/secret"
+}

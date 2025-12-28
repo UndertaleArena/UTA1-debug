@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+      {
+          "rolls": 1,
+          "entries": [
+              {
+                  "type": "minecraft:item",
+                  "name": "minecraft:carrot_on_a_stick",
+                  "functions":[
+                      {
+                          "function":"minecraft:set_name",
+                          "name": {"text":"","color":"white","italic":false,"bold":true,"extra":[{"translate":"itm.bosssoul","with":[{"translate":"tem.0"}]}]}
+                      },
+                      {
+                          "function":"minecraft:set_lore",
+                          "mode": "replace_all",
+                          "lore":[{"color":"yellow","italic":false,"translate":"itm.bosssoul.b"},{"text":""},{"color":"white","italic":false,"translate":"itm.bosssoul.0"},{"color":"white","italic":false,"translate":"itm.bosssoul.1"},{"color":"white","italic":false,"translate":"itm.bosssoul.2"},{"color":"white","italic":false,"translate":"itm.bosssoul.3"},{"text":""},{"color":"gray","italic":false,"translate":"itm.bosssoul.f","with":[{"selector":"@s"}]}],
+                          "entity": "this"
+                      },
+                      {
+                          "function": "minecraft:set_custom_data",
+                          "tag": "{soul:1b,loot_soul:1b,can_fist:1b}"
+                      },
+                      {
+                          "function": "minecraft:set_attributes",
+                          "modifiers": [
+                              {
+                                  "amount": 1.0,
+                                  "attribute": "generic.luck",
+                                  "operation": "add_value",
+                                  "id": "hihinebhere",
+                                  "slot": "offhand"
+                              }
+                          ],
+                          "show_in_tooltip": false
+                      }
+                  ]
+              }
+          ]
+      }
+   ]
+}

@@ -1,0 +1,6 @@
+{
+    "values": [
+        "ut:init/reload_chr_storage",
+        "ut:init/restart"
+    ]
+}

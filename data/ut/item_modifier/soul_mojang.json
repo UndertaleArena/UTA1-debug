@@ -1,0 +1,7 @@
+{
+    "function":"minecraft:set_lore",
+    "lore":["",{"color":"gray","italic":false,"translate":"itm.bosssoul.f","with":[{"text":"Mojang"}]}],
+    "replace": false,
+    "entity": "this",
+    "mode": "replace_all"
+}

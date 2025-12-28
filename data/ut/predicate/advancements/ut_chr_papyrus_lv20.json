@@ -1,0 +1,13 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate":
+    {
+      "player":
+      {
+          "advancements": {
+              "ut:chr/papyrus/lv20": true
+          }
+      }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.toriel.lv5"
+        },
+        "description": {
+            "translate": "adv.chr.lv5","with": [
+                {
+                    "translate": "chr.toriel"
+                }
+            ]
+        },
+        "icon": {
+            "id": "minecraft:magma_cream"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/toriel/root"
+}

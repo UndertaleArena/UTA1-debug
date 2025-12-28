@@ -1,0 +1,39 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.other.timer5"
+        },
+        "description": [{
+            "translate": "adv.other.timer5.lore"
+        },
+        {"text":"\n"},
+        [{
+            "translate": "adv.other.timer5.unlock"
+        },
+        {
+            "translate": "adv.other.timer5.unlock2",
+            "font":"minecraft:wingdings"
+        }]
+        ],
+        "icon": {
+            "id": "minecraft:nether_brick",
+            "components": {"custom_model_data":24}
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "5": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:timer5"
+            }
+        }
+    },
+    "parent": "ut:other/timer/level4",
+    "rewards": {
+        "function": "ut:system/shulker/shulker_box_egg"
+    }
+}

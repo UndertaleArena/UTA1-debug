@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.other.hacker_dog"
+        },
+        "description": {
+            "translate": "adv.other.hacker_dog.lore"
+        },
+        "icon": {
+            "id": "minecraft:nether_brick"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "9": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog9"
+            }
+        }
+    },
+    "parent": "ut:other/all_dog"
+}

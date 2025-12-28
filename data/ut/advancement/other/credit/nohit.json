@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.credit.nohit"
+        },
+        "description": [{
+            "translate": "adv.credit.nohit.lore"
+        },
+        {"text":"\n"},
+        {
+            "translate": "adv.credit.nohit.unlock"
+        }],
+        "icon": {
+            "id": "minecraft:brown_dye"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "other": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:other/credit/root"
+}

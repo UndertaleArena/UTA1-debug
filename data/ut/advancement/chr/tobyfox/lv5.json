@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.tobyfox.lv5"
+        },
+        "description": [{
+            "translate": "adv.chr.lv5","with": [
+                {
+                    "translate": "chr.tobyfox"
+                }
+            ]
+        },
+        {"text":"\n"},
+        {
+            "translate": "adv.chr.tobyfox.lv5.unlock"
+        }],
+        "icon": {
+            "id": "minecraft:nether_brick"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "lv20": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/tobyfox/root"
+}

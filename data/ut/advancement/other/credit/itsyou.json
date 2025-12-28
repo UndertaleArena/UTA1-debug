@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.credit.itsyou"
+        },
+        "description": {
+            "translate": "adv.credit.itsyou.lore"
+        },
+        "icon": {
+            "id": "minecraft:brown_dye"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "other": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:other/credit/nohit"
+}

@@ -1,0 +1,126 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.other.all_dog"
+        },
+        "description": [{
+            "translate": "adv.other.all_dog.lore"
+        },
+        {"text":"\n"},
+        {
+            "translate": "adv.other.all_dog.unlock"
+        }],
+        "icon": {
+            "id": "minecraft:nether_brick"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog1"
+            }
+        },
+        "2": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog2"
+            }
+        },
+        "3": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog3"
+            }
+        },
+        "4": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog4"
+            }
+        },
+        "5": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog5"
+            }
+        },
+        "6": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog6"
+            }
+        },
+        "7": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog7"
+            }
+        },
+        "8": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog8"
+            }
+        },
+        "10": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog10"
+            }
+        },
+        "11": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog11"
+            }
+        },
+        "12": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog12"
+            }
+        },
+        "13": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog13"
+            }
+        },
+        "14": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog14"
+            }
+        },
+        "15": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog15"
+            }
+        },
+        "16": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog16"
+            }
+        },
+        "17": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog17"
+            }
+        },
+        "19": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:dog19"
+            }
+        }
+    },
+    "parent": "ut:other/one_dog"
+}

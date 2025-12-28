@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#ut:void_vapor_lava",
+    "#minecraft:impermeable",
+    "minecraft:slime_block"
+  ]
+}

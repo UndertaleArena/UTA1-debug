@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.other.timer2"
+        },
+        "description": {
+            "translate": "adv.other.timer2.lore"
+        },
+        "icon": {
+            "id": "minecraft:melon_seeds"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "1": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "ut:timer4"
+            }
+        }
+    },
+    "parent": "ut:other/timer/level1"
+}

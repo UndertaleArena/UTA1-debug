@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "translate": "adv.chr.maddummy.lv5"
+        },
+        "description": [{
+            "translate": "adv.chr.lv5","with": [
+                {
+                    "translate": "chr.maddummy"
+                }
+            ]
+        },
+        {"text":"\n"},
+        {
+            "translate": "adv.chr.maddummy.lv5.unlock"
+        }],
+        "icon": {
+            "id": "minecraft:carrot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "lv5": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ut:chr/maddummy/root"
+}

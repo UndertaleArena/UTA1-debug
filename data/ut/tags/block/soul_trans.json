@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:barrier",
+    "minecraft:gray_stained_glass",
+    "minecraft:gray_stained_glass_pane",
+    "minecraft:light_gray_stained_glass",
+    "minecraft:light_gray_stained_glass_pane",
+    "#ut:transparent"
+  ]
+}
